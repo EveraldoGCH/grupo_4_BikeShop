@@ -11,4 +11,4 @@ El objetivo de esta tienda es que nuestros clientes puedan navegar de manera rá
 
 **Colaboradores:**
 
-[Facundo Méndez]: Facu es un chico de 19 años que actualmente se encuentra cursando el CBC de la UBA y también en "Programación web full stack" de Digital House.
+*Facundo Méndez: Facu es un chico de 19 años que actualmente se encuentra cursando el CBC de la UBA y también en "Programación web full stack" de Digital House.*
