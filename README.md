@@ -12,4 +12,5 @@ El objetivo de esta tienda es que nuestros clientes puedan navegar de manera rá
 **Colaboradores:**
 
 *Facundo Méndez: Es un chico de 19 años que actualmente se encuentra cursando el CBC de la UBA y también en "Programación web full stack" de Digital House.*
+
 *Everaldo Guevara: Chico de 19 años que esta aprendiendo en el mundo de la programación web full stack.*
