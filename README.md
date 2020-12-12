@@ -16,10 +16,22 @@ Nos dirigimos a todas aquellas personas que les fascina coleccionar y lucir sus 
 ○ [Funko](https://www.funko.com/ "Funko") 
 [![funkopant.png](https://i.postimg.cc/jSyzKKkP/funkopant.png)](https://postimg.cc/qNMtxfrv)
 La barra de busqueda y la seccion de categorias segun de donde esta inspirado el producto(serie TV, comics, etc), es similar al que aspiramos.
+
  ○ [Hasbro](https://www.tiendahasbro.com/ "Hasbro")
 [![hasbroreg.png](https://i.postimg.cc/5NYrBY6J/hasbroreg.png)](https://postimg.cc/HVm3HLwv)
 Muchas veces se vuelve tedioso registrarse ya que la pagina te pide muchas verificaciones pero el formulario de registro de Hasbro es muy rapido y sencillo.
- ○ 
+
+ ○ [CD Market Argentina](https://www.cdmarket.com.ar/ "CD Market Argentina")
+ [![cdmarketcarrito.png](https://i.postimg.cc/k4ZgHR9C/cdmarketcarrito.png)](https://postimg.cc/R67m6FNp)
+ Carrito de compras  entendible.
+ 
+ ○[Falabella](https://www.falabella.com.ar/falabella-ar/ "Falabella")
+ [![falafooter.png](https://i.postimg.cc/nrXCcbpv/falafooter.png)](https://postimg.cc/30HKnqyR)
+ Contiene un footer sencillo con las redes sociales, los derechos reservados y un apartado de servicio al cliente con redirecciones que le brindan al cliente mas informacion acerca de la web.
+  
+  ○[Logitech ](https://www.logitechstore.com.ar/?gclid=Cj0KCQiA8dH-BRD_ARIsAC24umYNxRf_ZSy00NevJFsFTkJEfeQJhWQ5kvW26SMMwyJLLDraSlIUZe8aAmucEALw_wcB "Logitech ")
+  [![Captura-de-pantalla-2020-12-12-180303.png](https://i.postimg.cc/yxnxP1n4/Captura-de-pantalla-2020-12-12-180303.png)](https://postimg.cc/tnZ9RHL2)
+  Parece interesante y original la manera de pararte con el cursor sobre los productos y  que cuando lo hace le da colores a cada uno de los fondos, que de blanco pase a violeta por ejemplo. Seria algo que esta bueno para tomar como referencia y asi darle al sitio un toque mas atractivo y dinamico. 
 ##  Colaboradores
 
 *Facundo Méndez:  Hola a tod@s!! . Tengo 19 años , soy estudiante de la UBA y tambien  de Digital House. Este es mi primer contacto con el mundo de la programacion pero  voy a meterle mucha garra porque el dia de mañana me gustaria trabajar como desarrollador.*
