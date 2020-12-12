@@ -25,9 +25,9 @@ Muchas veces se vuelve tedioso registrarse ya que la pagina te pide muchas verif
  [![cdmarketcarrito.png](https://i.postimg.cc/k4ZgHR9C/cdmarketcarrito.png)](https://postimg.cc/R67m6FNp)
  Carrito de compras  entendible.
  
- ○[Falabella](https://www.falabella.com.ar/falabella-ar/ "Falabella")
- [![falafooter.png](https://i.postimg.cc/nrXCcbpv/falafooter.png)](https://postimg.cc/30HKnqyR)
- Contiene un footer sencillo con las redes sociales, los derechos reservados y un apartado de servicio al cliente con redirecciones que le brindan al cliente mas informacion acerca de la web.
+ ○[Funidelia](https://www.funidelia.com.ar/ "Funidelia")
+ [![Captura-de-pantalla-2020-12-12-181439.png](https://i.postimg.cc/Vvb1SzTW/Captura-de-pantalla-2020-12-12-181439.png)](https://postimg.cc/RJ92yxvW)
+ La forma de comprar es sencilla por lo tanto se vuelve entendible para cualquier tipo de cliente, ademas presenta unas ventanas que dicen la descripcion del producto, casos de envios y para sus devoluciones y por ultimo, los medios de pago que propone la pagina.
   
   ○[Logitech ](https://www.logitechstore.com.ar/?gclid=Cj0KCQiA8dH-BRD_ARIsAC24umYNxRf_ZSy00NevJFsFTkJEfeQJhWQ5kvW26SMMwyJLLDraSlIUZe8aAmucEALw_wcB "Logitech ")
   [![Captura-de-pantalla-2020-12-12-180303.png](https://i.postimg.cc/yxnxP1n4/Captura-de-pantalla-2020-12-12-180303.png)](https://postimg.cc/tnZ9RHL2)
