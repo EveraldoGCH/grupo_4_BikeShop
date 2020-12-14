@@ -34,7 +34,7 @@ Muchas veces se vuelve tedioso registrarse ya que la pagina te pide muchas verif
   Parece interesante y original la manera de pararte con el cursor sobre los productos y  que cuando lo hace le da colores a cada uno de los fondos, que de blanco pase a violeta por ejemplo. Seria algo que esta bueno para tomar como referencia y asi darle al sitio un toque mas atractivo y dinamico.
   
   ## Paleta de colores
-   ![#F0BCD4](https://via.placeholder.com/15/F0BCD4/000000?text=+) `#F0BCD4`
+   ![#0A0C09](https://via.placeholder.com/15/0A0C09/000000?text=+) `#0A0C09`
   
 ##  Colaboradores
 
