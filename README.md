@@ -52,7 +52,13 @@ Muchas veces se vuelve tedioso registrarse ya que la página te pide muchas veri
   -------------------------------------------------------
   ## Tipografías
   
-  *Alegreya Sans Black Italic
+  •Alegreya Sans Black Italic.
+  
+  •Palatino Linotype.
+  
+  •Sylfaen
+  
+  -------------------------------------------------------
 ##  Colaboradores
 
 *Facundo Méndez:  Hola a tod@s!! . Tengo 19 años , soy estudiante de la UBA y tambien  de Digital House. Este es mi primer contacto con el mundo de la programacion pero  voy a meterle mucha garra porque el dia de mañana me gustaria trabajar como desarrollador.*
