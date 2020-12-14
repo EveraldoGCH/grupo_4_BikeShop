@@ -41,7 +41,7 @@ Muchas veces se vuelve tedioso registrarse ya que la pagina te pide muchas verif
   
   -------------------------------------------------------
   ## Paleta de colores
-                
+     1. ![#FF7F51](https://via.placeholder.com/15/FF7F51/000000?text=+) `#FF7F51`               
   -------------------------------------------------------
 ##  Colaboradores
 
