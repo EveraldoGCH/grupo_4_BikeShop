@@ -41,24 +41,6 @@ Muchas veces se vuelve tedioso registrarse ya que la página te pide muchas veri
   Parece interesante y original la manera de pararte con el cursor sobre los productos y  que cuando lo hace le dá colores a cada uno de los fondos(que de blanco pase a violeta por ejemplo). Sería algo que está bueno para tomar como referencia y así darle al sitio un toque más atractivo y dinámico.
   
 -------------------------------------------------------
-  ## Paleta de colores
-
-* ![#0A0C09](https://via.placeholder.com/15/0A0C09/000000?text=+) `#0A0C09`
-* ![#f6f613](https://via.placeholder.com/15/f6f613/000000?text=+) `#f6f613`
-* ![#3C76B9](https://via.placeholder.com/15/3C76B9/000000?text=+) `#3C76B9`
-* ![#FF7C70](https://via.placeholder.com/15/FF7C70/000000?text=+) `#FF7C70`
-* ![#CC1100](https://via.placeholder.com/15/CC1100/000000?text=+) `#CC1100`
-
--------------------------------------------------------
-  ## Tipografías
-  
-  •Alegreya Sans Black Italic.
-  
-  •Palatino Linotype.
-  
-  •Sylfaen
-  
--------------------------------------------------------
 ##  Colaboradores
 
 *Facundo Méndez:  Hola a tod@s!! . Tengo 19 años , soy estudiante de la UBA y tambien  de Digital House. Este es mi primer contacto con el mundo de la programacion pero  voy a meterle mucha garra porque el dia de mañana me gustaria trabajar como desarrollador.*
