@@ -50,6 +50,9 @@ Muchas veces se vuelve tedioso registrarse ya que la página te pide muchas veri
 * ![#CC1100](https://via.placeholder.com/15/CC1100/000000?text=+) `#CC1100`
 
   -------------------------------------------------------
+  ## Tipografías
+  
+  *Alegreya Sans Black Italic
 ##  Colaboradores
 
 *Facundo Méndez:  Hola a tod@s!! . Tengo 19 años , soy estudiante de la UBA y tambien  de Digital House. Este es mi primer contacto con el mundo de la programacion pero  voy a meterle mucha garra porque el dia de mañana me gustaria trabajar como desarrollador.*
