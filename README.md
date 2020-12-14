@@ -22,11 +22,11 @@ Nos dirigimos a todas aquellas personas que les fascina coleccionar y lucir sus 
 ## Referentes
 ○ [Funko](https://www.funko.com/ "Funko") 
 [![funkopant.png](https://i.postimg.cc/jSyzKKkP/funkopant.png)](https://postimg.cc/qNMtxfrv)
-La barra de busqueda y la seccion de categorias segun de donde esta inspirado el producto(serie TV, comics, etc), es similar al que aspiramos.
+La barra de búsqueda y la sección de categorías según de donde está inspirado el producto(serie TV, cómics, etc), es similar al que aspiramos.
 
  ○ [Hasbro](https://www.tiendahasbro.com/ "Hasbro")
 [![hasbroreg.png](https://i.postimg.cc/5NYrBY6J/hasbroreg.png)](https://postimg.cc/HVm3HLwv)
-Muchas veces se vuelve tedioso registrarse ya que la pagina te pide muchas verificaciones pero el formulario de registro de Hasbro es muy rapido y sencillo.
+Muchas veces se vuelve tedioso registrarse ya que la página te pide muchas verificaciones pero el formulario de registro de Hasbro es muy rápido y sencillo.
 
  ○ [CD Market Argentina](https://www.cdmarket.com.ar/ "CD Market Argentina")
  [![cdmarketcarrito.png](https://i.postimg.cc/k4ZgHR9C/cdmarketcarrito.png)](https://postimg.cc/R67m6FNp)
@@ -34,11 +34,11 @@ Muchas veces se vuelve tedioso registrarse ya que la pagina te pide muchas verif
  
  ○[Funidelia](https://www.funidelia.com.ar/ "Funidelia")
  [![Captura-de-pantalla-2020-12-12-181439.png](https://i.postimg.cc/Vvb1SzTW/Captura-de-pantalla-2020-12-12-181439.png)](https://postimg.cc/RJ92yxvW)
- La forma de comprar es sencilla por lo tanto se vuelve entendible para cualquier  de cliente, ademas presenta unas ventanas que dicen la descripcion del producto, casos de envios y para sus devoluciones y por ultimo, los medios de pago que propone la pagina.
+ La forma de comprar es sencilla por lo tanto se vuelve entendible para cualquier cliente. Además presenta unos desplegables que dicen la descripción del producto, envíos y  devoluciones y por último, los medios de pago que propone la web.
   
   ○[Logitech ](https://www.logitechstore.com.ar/?gclid=Cj0KCQiA8dH-BRD_ARIsAC24umYNxRf_ZSy00NevJFsFTkJEfeQJhWQ5kvW26SMMwyJLLDraSlIUZe8aAmucEALw_wcB "Logitech ")
   [![Captura-de-pantalla-2020-12-12-180303.png](https://i.postimg.cc/yxnxP1n4/Captura-de-pantalla-2020-12-12-180303.png)](https://postimg.cc/tnZ9RHL2)
-  Parece interesante y original la manera de pararte con el cursor sobre los productos y  que cuando lo hace le da colores a cada uno de los fondos, que de blanco pase a violeta por ejemplo. Seria algo que esta bueno para tomar como referencia y asi darle al sitio un toque mas atractivo y dinamico.
+  Parece interesante y original la manera de pararte con el cursor sobre los productos y  que cuando lo hace le dá colores a cada uno de los fondos(que de blanco pase a violeta por ejemplo). Sería algo que está bueno para tomar como referencia y así darle al sitio un toque más atractivo y dinámico.
   
   -------------------------------------------------------
   ## Paleta de colores
@@ -54,4 +54,4 @@ Muchas veces se vuelve tedioso registrarse ya que la pagina te pide muchas verif
 
 *Facundo Méndez:  Hola a tod@s!! . Tengo 19 años , soy estudiante de la UBA y tambien  de Digital House. Este es mi primer contacto con el mundo de la programacion pero  voy a meterle mucha garra porque el dia de mañana me gustaria trabajar como desarrollador.*
 
-*Everaldo Guevara: Chico de 19 años que esta aprendiendo en el mundo de la programación web full stack.*
+*Everaldo Guevara: Chico de 19 años que está aprendiendo en el mundo de la programación web full stack.*
