@@ -1,6 +1,7 @@
 # grupo_4_FunkoShop
 Proyecto Integrador Digital House e-commerce de tienda de Funko pop's.
 
+-------------------------------------------------------
 ##   ¿A qué nos dedicamos?
 
 Funko Shop es una tienda online dedicada a la venta de los productos popularmente conocidos como **"Funko Pop's"**.
