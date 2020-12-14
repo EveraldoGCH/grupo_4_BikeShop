@@ -31,7 +31,11 @@ Muchas veces se vuelve tedioso registrarse ya que la pagina te pide muchas verif
   
   ○[Logitech ](https://www.logitechstore.com.ar/?gclid=Cj0KCQiA8dH-BRD_ARIsAC24umYNxRf_ZSy00NevJFsFTkJEfeQJhWQ5kvW26SMMwyJLLDraSlIUZe8aAmucEALw_wcB "Logitech ")
   [![Captura-de-pantalla-2020-12-12-180303.png](https://i.postimg.cc/yxnxP1n4/Captura-de-pantalla-2020-12-12-180303.png)](https://postimg.cc/tnZ9RHL2)
-  Parece interesante y original la manera de pararte con el cursor sobre los productos y  que cuando lo hace le da colores a cada uno de los fondos, que de blanco pase a violeta por ejemplo. Seria algo que esta bueno para tomar como referencia y asi darle al sitio un toque mas atractivo y dinamico. 
+  Parece interesante y original la manera de pararte con el cursor sobre los productos y  que cuando lo hace le da colores a cada uno de los fondos, que de blanco pase a violeta por ejemplo. Seria algo que esta bueno para tomar como referencia y asi darle al sitio un toque mas atractivo y dinamico.
+  
+  ## Paleta de colores
+   ![#F0BCD4](https://via.placeholder.com/15/F0BCD4/000000?text=+) `#F0BCD4`
+  
 ##  Colaboradores
 
 *Facundo Méndez:  Hola a tod@s!! . Tengo 19 años , soy estudiante de la UBA y tambien  de Digital House. Este es mi primer contacto con el mundo de la programacion pero  voy a meterle mucha garra porque el dia de mañana me gustaria trabajar como desarrollador.*
