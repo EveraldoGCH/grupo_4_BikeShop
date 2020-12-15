@@ -6,7 +6,7 @@
 * ![#FF7C70](https://via.placeholder.com/15/FF7C70/000000?text=+) `#FF7C70`
 * ![#CC1100](https://via.placeholder.com/15/CC1100/000000?text=+) `#CC1100`
 
--------------------------------------------------------------------
+---------------------------------------------------------------------
 ## Otros Enlaces 
  ○[Tipografías](https://github.com/EveraldoGCH/grupo_4_FunkoShop/blob/main/Design/Tipografias.md "Tipografías")
  
