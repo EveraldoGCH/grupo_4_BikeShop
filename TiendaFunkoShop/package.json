@@ -1,0 +1,14 @@
+{
+  "name": "funkoshop",
+  "version": "1.0.0",
+  "description": "E-commerce equipo numero 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Everaldo Guevara y Facundo Méndez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

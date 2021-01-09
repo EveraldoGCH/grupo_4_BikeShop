@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/dd4e815baa.js" crossorigin="anonymous"></script>
+        <LINK REL=StyleSheet href='../public/css/stylesheet.css'>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap" rel="stylesheet">
+        <meta name='viewport' content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <title>Funko Shop</title>
+        <script>
+            function openSlideMenu(){
+                document.getElementById('menu').style.width='65%'
+                document.getElementById('content').style.marginLeft='65%'
+            }
+        
+            function closeSlideMenu(){
+                document.getElementById('menu').style.width='0'
+                document.getElementById('content').style.marginLeft='0'
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+        <div id="content">
+       <header class='header'><!--HEADER-->
+           <span class="slide">
+               <a href="#" onclick="openSlideMenu()">
+            <i class="fas fa-bars"></i></a>
+           
+        </span>
+        <div id="menu" class="nav"><!--BARRA DE NAVEGACION MOBILE-->
+            <a href="#" class="close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i></a>
+            <a class= 'color1'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/batmanfunko.jpg'>Héroes</a>
+            <a class= 'color2'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/dwightFunko.jpg'>Series</a>
+            <a class= 'color1'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/jackFunko.jpg'>Películas</a>
+            <a class= 'color2'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/otrosFunko.jpg'>Originales</a>
+            <a class= 'color1'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/koolaidFunko.jpg'>Todos</a>
+        </div><!--TERMINA BARRA DE NAVEGACION MOBILE-->
+        <a href="./index.html"><img class ='logo' src="../public/images/funko.jpg" alt='LOGO'></a><!--LOGO-->
+            </div>
+        </div>
+        </header>
+
+       <section><!--Carrusel de productos-->
+
+       </section>
+
+       <section>
+
+       </section>
+
+       <footer>
+        <!--<div> img class ='logo-footer' src="../public/images/funko.jpg" alt='LOGO'> </div>
+        </footer>-->
+    </div>
+    </body>
+</html>
