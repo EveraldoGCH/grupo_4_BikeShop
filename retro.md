@@ -1,4 +1,5 @@
 # Starfish retrospective Sprint 1
+-----------------------------------------------------------
 - ### Start Doing:
 
 Necesitamos terminar  las maquetas de nuestro "Home", "Cart" y "Register" para su fecha de entrega  establecida. Nos da curiosidad  probar algunos codigos que pueden funcionar en el sitio ( con probar no perdemos nada :D ).
@@ -18,7 +19,6 @@ Hasta este primer sprint, aun no hay nada que debamos bajar la frecuencia de hac
 - ### Stop Doing:
 
 Hasta ahora, no encontramos nada que debamos dejar de hacer (por ahora...).
-
 
 
 
