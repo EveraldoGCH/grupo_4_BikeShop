@@ -48,6 +48,10 @@ Muchas veces se vuelve tedioso registrarse ya que la página te pide muchas veri
 *Everaldo Guevara: Chico de 19 años que está aprendiendo en el mundo de la programación web full stack.*
 
 -------------------------------------------------------
+## Tablero de tareas
+- [Trello](https://trello.com/b/dAlDoxlN/proyecto-integrador-funkoshop "Trello")
+
+-------------------------------------------------------
 ## Enlaces
 
 ○[Paleta de colores](https://github.com/EveraldoGCH/grupo_4_FunkoShop/blob/main/Design/PaletaDeColores.md "Paleta de colores")
