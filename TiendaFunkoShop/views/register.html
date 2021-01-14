@@ -3,8 +3,9 @@
     <head>
         <script src="https://kit.fontawesome.com/dd4e815baa.js" crossorigin="anonymous"></script>
         <LINK REL=StyleSheet href='../public/css/stylesheet.css'>
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <meta name='viewport' content="width=device-width, initial-scale=1">
         <meta charset="utf-8" />
         <title>Funko Shop</title>
@@ -43,18 +44,45 @@
         </div>
         </header>
 
-       <section><!--Carrusel de productos-->
+       <section class="contenido-medio"><!--Formularios-->
+        <div class="contenedorform">
+            <p>
+            <form action="./login.html" method='POST'>
+                <label for='nombre' class="textoform">Nombre</label></br>
+                <input class="inputform" type='text' name="nombre" id="nombre" placeholder="Tony" required tabindex="1">
+            </p></br>
+            <p>
+                <label for='nombre' class="textoform">Apellido</label></br>
+                <input class="inputform" type='text' name="apellido" id="apellido" placeholder="Stark" required tabindex="2">
+            </p></br>
+        <p>
+            <label for='nombre' class="textoform">Correo Electrónico</label></br>
+            <input class="inputform" type='email' name="email" id="email" placeholder="TonyStark@correo.com" required tabindex="3">
+        </p></br>
+        <p>
+            <label for='nombre' class="textoform">Contraseña</label></br>
+            <input class="inputform" type='password' name="password" id="password" placeholder="Contraseña" required tabindex="4">
+        </p></br>
+        <p class="boton">
+            <input class="boton1" type='submit' value="Registrarse" tabindex="5">
+        </p>
 
-       </section>
+            </form></br>
+        </br><p class="cuentalog">
+            ¿Ya tienes una cuenta? <a href="#">Inicia  sesión</a>
+            </p>
+        </div>
+     </section>
 
        <section>
 
        </section>
 
        <footer>
-        <div> 
-            <!--<img class ='logo-footer' src="../public/images/funko.jpg" alt='LOGO'>-->
+        <div class="footer">
+
         </div>
-    </footer>
+        </footer>
+    </div>
     </body>
 </html>

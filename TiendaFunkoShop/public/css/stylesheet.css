@@ -75,10 +75,72 @@ header{
     height: auto;
     max-height: 60px;
     top: 10px;
-    left: 34%;
+    left: 36.5%;
+}
+.logo-footer{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    max-height: 60px;
+    bottom: 0;
+}
+footer{
+    width: 100vw;
+    height: 16vw;
 }
 
 .imagenBarraAbierta{
     width: 100px;
     height: 75px;
 }
+/*REGISTRO*/
+.contenedorform{
+    width: 100vw;
+    max-height: 80vw;
+    padding: 8px;
+}
+form{
+    padding-top: 15px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    }
+
+.contenedorform input{
+    outline: none;
+    padding: 3px;
+}
+.contenedorform input:focus{
+    outline: lightgray solid 1px;
+}
+.contenedorform input{ 
+    text-align: center;
+} 
+.inputform{
+    width: 80vw;
+}
+.boton{
+    text-align: center;
+    width: 100vw;
+}
+.textoform{
+    padding-bottom: 3px;
+}
+.boton1{
+    width: 50vw;
+    height: 40px;
+    position: relative;
+    right: 0px;
+    font-size: 25px;
+    font-family:'Nunito', sans-serif;
+    
+}
+.cuentalog{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.contenedorform input ::placeholder{
+    font-size: 20px;
+}
+/*TERMINA REGISTRO*/
