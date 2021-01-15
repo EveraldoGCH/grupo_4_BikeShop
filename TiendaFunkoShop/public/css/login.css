@@ -20,6 +20,15 @@ body {
     padding: 70px 30px;
 
 }
+.caja-login .logo{
+    width: 33%;
+    height: 35%;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
 .caja-login label{
     margin: 0;
     padding: 0;
