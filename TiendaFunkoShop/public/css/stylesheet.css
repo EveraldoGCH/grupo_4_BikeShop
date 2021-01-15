@@ -68,15 +68,36 @@ header{
     height:30vw;
     position: fixed relative;
 }
+span .slide{
+    flex: 1;
+}
 
 .logo{
+    flex: 2;
     position: relative;
     width: 35vw;
-    height: 47vw;
+    height: 44vw;
     max-width: 300px;
     max-height: 500px;
-    top: -7vw;
+    top: -5.8vw;
     left: 23vw;
+}
+.logosder{
+    position: absolute;
+    flex: 3;
+    display: inline-block;
+    top: 2%;
+    right:2%;
+    font-size: 30px;
+}
+.logosder .fa-shopping-cart{
+    position: relative;
+    right: 6px;
+    padding-top: 12px;
+    color: black;
+}
+.logosder .fa-user{
+    color: black;
 }
 .logo-footer{
     position: absolute;
