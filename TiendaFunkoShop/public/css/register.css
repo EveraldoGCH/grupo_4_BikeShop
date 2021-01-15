@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../images/funko-fondo-login.jpg) no-repeat center top;
+    background: url(../images/fondo-robin.jpg) no-repeat center top;
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
@@ -9,7 +9,7 @@ body {
 
 .caja-login {
     width: 320px;
-    height: 420px;
+    height: 430px;
     background: #000;
     color: #fff;
     top: 50%;
@@ -35,10 +35,12 @@ body {
 }
 .caja-login input{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    
 
 }
 .caja-login input[type= "email"],
+.caja-login input[type="text"],
 .caja-login input[type= "password"]{
     border: none;
     border-bottom: 1px solid #fff;
@@ -47,8 +49,10 @@ body {
     height: 40px;
     color: #fff;
     font-size: 16px;
+    transition: all 1s;
     
 }
+
 .caja-login input[type="submit"]{
     border: none;
     outline: none;
@@ -64,14 +68,15 @@ body {
 }
 .caja-login input[type="submit"]:hover{
     color:#fff;
-    background: #FF7C70;
+    background: #CC1100;
 }
 .caja-login a{
     text-decoration: none;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 10px;
     color: darkgray;
     transition-duration: 1s;
+    margin-left:15%;
 
 }
 .caja-login a:hover{
