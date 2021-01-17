@@ -5,14 +5,15 @@
         <script src="https://kit.fontawesome.com/dd8af2371b.js" crossorigin="anonymous"></script>
         <LINK REL=StyleSheet href='../public/css/stylesheet.css'>
             <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap" rel="stylesheet">
         <meta name='viewport' content="width=device-width, initial-scale=1">
         <meta charset="utf-8" />
         <title>Funko Shop</title>
         <script>
             function openSlideMenu(){
-                document.getElementById('menu').style.width='65%'
-                document.getElementById('content').style.marginLeft='65%'
+                document.getElementById('menu').style.width='80vw'
+                document.getElementById('content').style.marginLeft='0vw'
             }
         
             function closeSlideMenu(){
@@ -30,6 +31,10 @@
             <i class="fas fa-bars"></i></a>
            
         </span>
+        <div>
+        <a href="./index.html"></a><img class="logo" src="../public/images/Logo2.png" alt='LOGO'></a><!--LOGO HORIZONTAL480pxMax-->
+        <a href="./index.html"></a><img class="logovertical" src="../public/images/logo-funkoShop.png" alt='LOGO'></a><!--LOGO VERTICAL480Px en adelante-->
+        </div>
         <span class="logosder"><!--Carrito y user logos-->
             <a href="../views/login.html"><i class="fas fa-user"></i></a></br>
             <a href="../views/cart.html"><i class="fas fa-shopping-cart"></i></a>
@@ -37,19 +42,32 @@
         <div id="menu" class="nav"><!--BARRA DE NAVEGACION MOBILE-->
             <a href="#" class="close" onclick="closeSlideMenu()">
             <i class="fas fa-times"></i></a>
-            <a class= 'color1'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/batmanfunko.jpg'>Héroes</a>
-            <a class= 'color2'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/dwightFunko.jpg'>Series</a>
-            <a class= 'color1'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/jackFunko.jpg'>Películas</a>
-            <a class= 'color2'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/otrosFunko.jpg'>Originales</a>
-            <a class= 'color1'href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/koolaidFunko.jpg'>Todos</a>
+            <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/batmanfunko.jpg'>Héroes</a>
+            <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/dwightFunko.jpg'>Series</a>
+            <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/jackFunko.jpg'>Películas</a>
+            <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/otrosFunko.jpg'>Originales</a>
+            <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/koolaidFunko.jpg'>Todos</a>
         </div><!--TERMINA BARRA DE NAVEGACION MOBILE-->
-        <a href="./index.html"><img class ='logo' src="../public/images/logo-funkoShop.png" alt='LOGO'></a><!--LOGO-->
+        <div><!--Categorias mayor a 600px-->
+            <a href="#"><img class='imagenCategoria' alt="MiniFunko" src='../public/images/batmanfunko.jpg'></a>
+            <a href="#"><img class='imagenCategoria' alt="MiniFunko" src='../public/images/dwightFunko.jpg'></a>
+            <a href="#"><img class='imagenCategoria' alt="MiniFunko" src='../public/images/jackFunko.jpg'></a>
+        </div>
             </div>
         </div>
         </header>
 
        <section><!--Carrusel de productos-->
         <div id="imgslider">
+            <figure>
+                <img src="../public/images/sliderdisney1MOBILE.jpg">
+                <img src="../public/images/sliderstarwars2MOBILE.jpg">
+                <img src="../public/images/slidermarvel3MOBILE.jpg">
+                <img src="../public/images/sliderpokemon4MOBILE.jpg">
+                <img src="../public/images/sliderdisney1MOBILE.jpg">
+            </figure>
+        </div>
+        <div id="imgslider2">
             <figure>
                 <img src="../public/images/disney-slider1-alto.jpg">
                 <img src="../public/images/starwars-sldier2-alto.jpg">

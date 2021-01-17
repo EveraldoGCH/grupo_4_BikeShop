@@ -10,6 +10,20 @@ body{
     font-family:'Alegreya Sans', sans-serif;
     overflow-x: hidden;
 }
+header{
+    display: flex;
+    background: lightgray;
+    width:100vw;
+    height:14vh;
+    max-height: 300px;
+    justify-content: space-between;
+}
+#content{
+    position: relative;
+    transition: margin-left 0.6s;
+    overflow: hidden;
+    width: 100%;
+}
 .nav{
     height: 100%;
     width: 0;
@@ -26,6 +40,8 @@ body{
 }
 .nav{
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .nav a{
     display: block;
@@ -54,45 +70,38 @@ body{
 .slide a{
     color:black
 }
-    
-
-#content{
+.fa-times{
     position: relative;
-    transition: margin-left 0.6s;
-    overflow: hidden;
-    width: 100%;
-}
-header{
-    display: flex;
-    background: lightgray;
-    width:100vw;
-    height:30vw;
-    position: fixed relative;
-    max-height: 110px;
-}
-span .slide{
-    flex: 1;
+    align-items: flex-end;
+    right: 36px;
+    margin-right: 4px;
 }
 
 .logo{
-    flex: 2;
-    position: relative;
-    width: 35vw;
-    height: 44vw;
-    max-width: 190px;
-    max-height: 200px;
-    top: -5.8vw;
-    left: 23vw;
+    position: absolute;
+    display: inline-block;
+    top: -12px;
+    left: 28vw;
+    min-height: 35px;
+    min-width: 75px;
+    width: 50vw;
+    height: 30vh;
+    max-width: 200px;
+    max-height: 110px;
 }
+.logovertical{
+    visibility: hidden;
+    position: absolute;
+    display: inline-block;
+}
+
 .logosder{
     position: absolute;
-    flex: 3;
     display: inline-block;
     padding-right: 4px;
-    font-size: 30px;
-    align-self: center;
+    font-size: 26px;
+    align-self:center;
     right: 0;
-
 }
 .logosder .fa-shopping-cart{
     position: relative;
@@ -108,57 +117,9 @@ span .slide{
     width: 100px;
     height: 75px;
 }
-/*REGISTRO*/
-.contenedorform{
-    width: 100vw;
-    max-height: 80vw;
-    padding: 8px;
+.imagenCategoria{
+    display: none;
 }
-form{
-    padding-top: 15px;
-    display: inline-block;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 23px;
-    }
-
-.contenedorform input{
-    outline: none;
-    padding: 3px;
-}
-.contenedorform input:focus{
-    outline: lightgray solid 1px;
-}
-.contenedorform input{ 
-    text-align: center;
-} 
-.inputform{
-    width: 80vw;
-}
-.boton{
-    text-align: center;
-    width: 100vw;
-}
-.textoform{
-    padding-bottom: 3px;
-}
-.boton1{
-    width: 50vw;
-    height: 50px;
-    position: relative;
-    right: 0px;
-    font-size: 25px;
-    font-family:'Nunito', sans-serif;
-    
-}
-.cuentalog{
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-}
-.contenedorform .inputform ::placeholder{
-    font-size: 23px;
-}
-/*TERMINA REGISTRO*/
 
 /*CARRUSEL DE IMAGENES DE PRODUCTOS*/
 #imgslider{
@@ -178,6 +139,24 @@ form{
     height: 50%;
 
 }
+#imgslider2{
+    overflow: hidden;
+    display: none;
+}
+#imgslider2 figure{
+    position:relative;
+    width: 500%;
+    height: 50%;
+    margin: 0;
+    left: 0;
+    animation: 20s slideimagen infinite;
+}
+#imgslider2 figure img{
+    float: left;
+    width: 20%;
+    height: 50%;
+
+}
 @keyframes slideimagen{
     0%{left:0;}
     20%{left: 0;}
@@ -190,6 +169,11 @@ form{
     100%{left:-400%;}
 }
 /*Termina carrusel de productos*/
+h2{
+    font-family: 'Staatliches', cursive;
+    font-weight: 350;
+    top: 0;
+}
 /*FOOTER*/
 .inner-footer{
     display: block;
@@ -258,27 +242,79 @@ h2{
     width: 100%;
     height: 100%;
 }
-.producto2 img{
-    border-radius: 8px;
-    background-color: lightgray;
-    width: 50%;
-    height: 55%;
-    max-width: 180px;
-    max-height: 180px;
+.fa-user{
+    padding: 0;
 }
-.producto3 img{
-    border-radius: 8px;
-    background-color: lightgray;
-    width: 50%;
-    height: 55%;
-    max-width: 180px;
-    max-height: 180px;
+@media (min-width:480px){
+    .logo{
+        display: none;
+    }
+    .logovertical{
+        visibility: visible;
+        top: -26px;
+        left: 34vw;
+        min-height: 50px;
+        min-width: 75px;
+        width: 50vw;
+        height: 55vh;
+        max-width: 155px;
+        max-height: 177px;
+    }
+    header{
+        height:20vh;
+    }
+    #imgslider{
+        display: none;
+    }
+    #imgslider2{
+        display: block;
+        visibility: visible;
+    }
+    .producto{
+        width: 31vw;
+        height: 29vh;
+        max-width: 165px;
+        max-height: 165px;
+    }
 }
-.producto4 img{
-    border-radius: 8px;
-    background-color: lightgray;
-    width: 50%;
-    height: 55%;
-    max-width: 180px;
-    max-height: 180px;
+@media (min-width:600px){
+    header{
+        height: 23vh;
+    }
+    .producto{
+        width: 23vw;
+        height: 30vh;
+        max-width: 200px;
+        max-height: 200px;
 }
+.fa-bars{display: none;
+
+}
+.logovertical{
+    visibility: visible;
+    top: -29px;
+    left: 38vw;
+    min-height: 150px;
+    min-width: 115px;
+    width: 50vw;
+    height: 55vh;
+    max-width: 175px;
+    max-height: 200px;
+    z-index: 10;
+}
+.imagenBarraAbierta{
+    display: none;
+}
+.imagenCategoria{
+    display: inline;
+    justify-content: space-around;
+    align-items: center;
+    width: 22vw;
+    height: 20vh;
+    max-height: 160px;
+    max-width: 120px;
+    opacity: 30%;
+    top: 17px;
+    position: relative;
+}
+    }
