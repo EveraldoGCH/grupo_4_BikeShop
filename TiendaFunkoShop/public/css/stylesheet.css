@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+img{
+    max-width: 100%;
+}
 body{
     width: 100%;
     background-color: #3C76B9;
@@ -13,10 +15,14 @@ body{
 header{
     display: flex;
     background: lightgray;
+    min-height: 100px;
     width:100vw;
     height:14vh;
     max-height: 300px;
     justify-content: space-between;
+}
+.categoriaheader600px{
+    display: none;
 }
 #content{
     position: relative;
@@ -80,8 +86,8 @@ header{
 .logo{
     position: absolute;
     display: inline-block;
-    top: -12px;
-    left: 28vw;
+    top: 2px;
+    left: 29%;
     min-height: 35px;
     min-width: 75px;
     width: 50vw;
@@ -96,6 +102,7 @@ header{
 }
 
 .logosder{
+    display: flex;
     position: absolute;
     display: inline-block;
     padding-right: 4px;
@@ -103,14 +110,19 @@ header{
     align-self:center;
     right: 0;
 }
+#usercarrito{
+    color: black;
+    flex-direction: row-reverse;
+}
 .logosder .fa-shopping-cart{
     position: relative;
-    right: 6px;
+    right: 5.5px;
     padding-top: 12px;
     color: black;
 }
 .logosder .fa-user{
     color: black;
+    min-width: 29.25px;
 }
 
 .imagenBarraAbierta{
@@ -122,10 +134,10 @@ header{
 }
 
 /*CARRUSEL DE IMAGENES DE PRODUCTOS*/
-#imgslider{
+#imgslidermobile{
     overflow: hidden;
 }
-#imgslider figure{
+#imgslidermobile figure{
     position:relative;
     width: 500%;
     height: 50%;
@@ -133,7 +145,7 @@ header{
     left: 0;
     animation: 20s slideimagen infinite;
 }
-#imgslider figure img{
+#imgslidermobile figure img{
     float: left;
     width: 20%;
     height: 50%;
@@ -176,7 +188,6 @@ h2{
 }
 /*FOOTER*/
 .inner-footer{
-    display: block;
     margin: 0;
     padding: 0;
     background-color: #272727;
@@ -184,29 +195,23 @@ h2{
 }
 .social-links{
     display: flex;
-    justify-content: center;
-    width: 108vw;
-    height: 22vw;
+    justify-content: space-around;
+    padding-top: 9px;
 }
-.social-links ul{
-    position: absolute;
-    padding: 6vw;
-    display: flex;
-    width: 100vw;
-    height: 30px;
+.social-links a{
+    font-size: 40px;
+    color: white;
 }
 .social-items{
     list-style: none;
     flex: 1;
     margin: 0 10px;
 }
-.social-items a{
-    padding: 10px 20px;
-    font-size: 35px;
+#social-items a{
     color: #6cccc6;
     transition: all .25s;
 }
-.social-items a:hover{
+#social-items a:hover{
     color: #5db3ad;
 }
 .outer-footer{
@@ -217,7 +222,12 @@ h2{
     font-size: 16px;
     background-color: #3f3f3f;
     bottom:0;
-}/*TERMINA Footer*/
+}
+#insta{
+    position: relative;
+    left: -48px;
+}
+/*TERMINA Footer*/
 
 /*Productos mas buscados*/
 h2{
@@ -251,19 +261,19 @@ h2{
     }
     .logovertical{
         visibility: visible;
-        top: -26px;
-        left: 34vw;
-        min-height: 50px;
-        min-width: 75px;
+        top: -25px;
+        left: 34%;
+        min-height: 150px;
+        min-width: 115px;
         width: 50vw;
         height: 55vh;
-        max-width: 155px;
-        max-height: 177px;
+        max-width: 170px;
+        max-height: 135%;
     }
     header{
-        height:20vh;
+        height:22vh;
     }
-    #imgslider{
+    #imgslidermobile{
         display: none;
     }
     #imgslider2{
@@ -276,10 +286,49 @@ h2{
         max-width: 165px;
         max-height: 165px;
     }
+    .social-links{
+       padding-top: 13px;;
+    }
+    .inner-footer{
+        height: 10vh;
+    }
+    #insta{
+        position: relative;
+        left: -48px;
+    }
 }
 @media (min-width:600px){
     header{
-        height: 23vh;
+        height: 30vh;
+    }
+    .categoriaheader600px a{
+        text-decoration: none;
+        color: black;
+        font-weight: 550;
+    }
+    .categoriaheader600px a:hover{
+        border-bottom:white solid 2px;
+    }
+    .categoriaheader600px ul{
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        list-style: none;
+        padding-right: 0px;
+    }
+    .categoriaheader600px ul li{
+        padding: 10px;
+    }
+    .categoriaheader600px{
+        position: absolute;
+        display: inline-block;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 28px;
+        width: 100%;
+        list-style-type: none;
+        overflow: hidden;
+        bottom: 0;
+        z-index: 20;
     }
     .producto{
         width: 23vw;
@@ -293,14 +342,51 @@ h2{
 .logovertical{
     visibility: visible;
     top: -29px;
-    left: 38vw;
+    left: 36.5%;
     min-height: 150px;
     min-width: 115px;
     width: 50vw;
     height: 55vh;
     max-width: 175px;
-    max-height: 200px;
+    max-height: 110%;
     z-index: 10;
+}
+.imagenesheader{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    bottom: 0px;
+    padding-right: 35px;
+}
+#dwigth{
+    position: relative;
+    right: 4px;
+}
+#harryp{
+    position: relative;
+    left:47px;
+}
+#mounstruo{
+    position: relative;
+    left: 40px;
+}
+#batmantexto{
+    position: relative;
+    left: 3px;
+}
+
+#dwigthtexto{
+    position: relative;
+    left: 4px;
+}
+#harryptexto{
+    position: relative;
+    left: 50px;
+}
+#mtexto{
+    position: relative;
+    left: 20px;
 }
 .imagenBarraAbierta{
     display: none;
@@ -313,8 +399,46 @@ h2{
     height: 20vh;
     max-height: 160px;
     max-width: 120px;
-    opacity: 30%;
+    opacity: 50%;
+    transition: 0,3s;
     top: 17px;
     position: relative;
 }
+.logosder .fa-shopping-cart{
+    position: absolute;
+    float: right;
+    top: -240%;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.logosder .fa-user{
+    position: absolute;
+    float: right;
+    right: 75px;
+    top: -250%;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-right: 4px;
+}
+
+@media (min-width:768px){
+    .logovertical{
+        top: -29px;
+        left: 39%;
+        min-height: 150px;
+        min-width: 115px;
+        width: 50vw;
+        height: 55vh;
+        max-width: 185px;
+        max-height: 120%;
     }
+}
+@media (min-width:1024px){
+    #imgslider2{
+        display: none;
+    }
+    #imgslidermobile{
+        display: inline-block;
+    }
+}

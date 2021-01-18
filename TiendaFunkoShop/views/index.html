@@ -7,6 +7,7 @@
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <meta name='viewport' content="width=device-width, initial-scale=1">
         <meta charset="utf-8" />
         <title>Funko Shop</title>
@@ -23,23 +24,38 @@
         </script>
     </head>
     <body>
-        <div>
         <div id="content">
        <header><!--HEADER-->
            <span class="slide">
                <a href="#" onclick="openSlideMenu()">
             <i class="fas fa-bars"></i></a>
            
-        </span>
-        <div>
-        <a href="./index.html"></a><img class="logo" src="../public/images/Logo2.png" alt='LOGO'></a><!--LOGO HORIZONTAL480pxMax-->
-        <a href="./index.html"></a><img class="logovertical" src="../public/images/logo-funkoShop.png" alt='LOGO'></a><!--LOGO VERTICAL480Px en adelante-->
-        </div>
-        <span class="logosder"><!--Carrito y user logos-->
-            <a href="../views/login.html"><i class="fas fa-user"></i></a></br>
-            <a href="../views/cart.html"><i class="fas fa-shopping-cart"></i></a>
-        </span>
-        <div id="menu" class="nav"><!--BARRA DE NAVEGACION MOBILE-->
+         </span>
+
+         <a href="./index.html"></a><img class="logo" src="../public/images/Logo2.png" alt='LOGO'></a><!--LOGO HORIZONTAL480pxMax-->
+         <a href="./index.html"></a><img class="logovertical" src="../public/images/logo-funkoShop.png" alt='LOGO'></a><!--LOGO VERTICAL480Px en adelante-->
+        
+         <span class="logosder"><!--Carrito y user logos-->
+            <a href="../views/login.html"><i class="fas fa-user" id="usercarrito"></i></a></br>
+            <a href="../views/cart.html"><i class="fas fa-shopping-cart" id="usercarrito"></i></a>
+         </span>
+         <nav class="categoriaheader600px">
+             <ul>
+                 <li>
+                    <a href="#" id="batmantexto">Héroes</a> 
+                 </li>
+                 <li>
+                    <a href="#" id="dwigthtexto">Series</a> 
+                 </li>
+                 <li>
+                    <a href="#" id="harryptexto">Peliculas</a> 
+                 </li>
+                 <li>
+                    <a href="#" id="mtexto">Originales</a> 
+                 </li>
+             </ul>
+         </nav>
+         <div id="menu" class="nav"><!--BARRA DE NAVEGACION MOBILE-->
             <a href="#" class="close" onclick="closeSlideMenu()">
             <i class="fas fa-times"></i></a>
             <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/batmanfunko.jpg'>Héroes</a>
@@ -47,18 +63,18 @@
             <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/jackFunko.jpg'>Películas</a>
             <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/otrosFunko.jpg'>Originales</a>
             <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='../public/images/koolaidFunko.jpg'>Todos</a>
-        </div><!--TERMINA BARRA DE NAVEGACION MOBILE-->
-        <div><!--Categorias mayor a 600px-->
-            <a href="#"><img class='imagenCategoria' alt="MiniFunko" src='../public/images/batmanfunko.jpg'></a>
-            <a href="#"><img class='imagenCategoria' alt="MiniFunko" src='../public/images/dwightFunko.jpg'></a>
-            <a href="#"><img class='imagenCategoria' alt="MiniFunko" src='../public/images/jackFunko.jpg'></a>
-        </div>
+         </div><!--TERMINA BARRA DE NAVEGACION MOBILE-->
+         <div class="imagenesheader"><!--Categorias mayor a 600px-->
+            <a href="#"><img class='imagenCategoria' id="batman" alt="MiniFunko" src='../public/images/batmanfunko.jpg'></a>
+            <a href="#"><img class='imagenCategoria' id="dwigth" alt="MiniFunko" src='../public/images/dwightFunko.jpg'></a>
+            <a href="#"><img class='imagenCategoria' id="harryp" alt="MiniFunko" src='../public/images/harrycabeza.png'></a>
+            <a href="#"><img class='imagenCategoria' id="mounstruo" alt="MiniFunko" src='../public/images/otrosFunko.jpg'></a>
+         </div>
             </div>
-        </div>
         </header>
 
        <section><!--Carrusel de productos-->
-        <div id="imgslider">
+        <div id="imgslidermobile">
             <figure>
                 <img src="../public/images/sliderdisney1MOBILE.jpg">
                 <img src="../public/images/sliderstarwars2MOBILE.jpg">
@@ -91,12 +107,9 @@
        <footer class="footer"><!--Footer-->
         <div class="inner-footer"> 
             <div class="social-links">
-                <ul>
-                    <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="social-items"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                    
-                </ul>
+                <a href="#" id="social-items"><i class="fab fa-facebook"></i></a>>
+                <a href="#" id="social-items"><i class="fab fa-instagram" id="insta"></i></a>
+                <a href="#" id="social-items"><i class="fab fa-twitter-square"></i></a>
             </div>
         </div> 
         <div class="outer-footer">
