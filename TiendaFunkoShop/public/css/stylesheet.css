@@ -86,7 +86,7 @@ header{
 .logo{
     position: absolute;
     display: inline-block;
-    top: 2px;
+    top: 0px;
     left: 29%;
     min-height: 35px;
     min-width: 75px;
@@ -96,9 +96,8 @@ header{
     max-height: 110px;
 }
 .logovertical{
-    visibility: hidden;
     position: absolute;
-    display: inline-block;
+    display: none;
 }
 
 .logosder{
@@ -256,23 +255,21 @@ h2{
     padding: 0;
 }
 @media (min-width:480px){
-    .logo{
-        display: none;
-    }
-    .logovertical{
-        visibility: visible;
-        top: -25px;
-        left: 34%;
-        min-height: 150px;
-        min-width: 115px;
-        width: 50vw;
-        height: 55vh;
-        max-width: 170px;
-        max-height: 135%;
-    }
     header{
-        height:22vh;
+        height:21vh;
     }
+    .logo{
+        display: inline-block;
+        top: 3px;
+        left: 32.5%;
+        min-height: 35px;
+        min-width: 75px;
+        width: 50vw;
+        height: 30vh;
+        max-width: 200px;
+        max-height: 110px;
+    }
+    
     #imgslidermobile{
         display: none;
     }
@@ -300,6 +297,16 @@ h2{
 @media (min-width:600px){
     header{
         height: 30vh;
+    }
+    .logo{
+        top: 3px;
+        left: 36.7%;
+        min-height: 35px;
+        min-width: 75px;
+        width: 50vw;
+        height: 30vh;
+        max-width: 200px;
+        max-height: 110px;
     }
     .categoriaheader600px a{
         text-decoration: none;
@@ -407,7 +414,7 @@ h2{
 .logosder .fa-shopping-cart{
     position: absolute;
     float: right;
-    top: -240%;
+    top: -195%;
     font-size: 40px;
     padding-top: 15px;
     padding-right: 10px;
@@ -416,22 +423,22 @@ h2{
     position: absolute;
     float: right;
     right: 75px;
-    top: -250%;
+    top: -200%;
     font-size: 40px;
     padding-top: 15px;
     padding-right: 4px;
 }
 
 @media (min-width:768px){
-    .logovertical{
-        top: -29px;
-        left: 39%;
-        min-height: 150px;
-        min-width: 115px;
+    .logo{
+        top: 3px;
+        left: 40%;
+        min-height: 35px;
+        min-width: 75px;
         width: 50vw;
-        height: 55vh;
-        max-width: 185px;
-        max-height: 120%;
+        height: 30vh;
+        max-width: 200px;
+        max-height: 110px;
     }
 }
 @media (min-width:1024px){
