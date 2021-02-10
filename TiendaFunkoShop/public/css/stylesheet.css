@@ -8,13 +8,13 @@ img{
 }
 body{
     width: 100%;
-    background-color: #3C76B9;
+    background-color: rgb(65, 143, 207);
     font-family:'Alegreya Sans', sans-serif;
     overflow-x: hidden;
 }
 header{
     display: flex;
-    background: lightgray;
+    background: rgb(109, 109, 109);
     min-height: 100px;
     width:100vw;
     height:14vh;
@@ -231,8 +231,22 @@ h2{
 /*Productos mas buscados*/
 h2{
     text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 12vw;
+    font-weight: 300;
+    
 }
-
+.destacadosflechas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow-x:auto;
+}
+.fa-arrow-down{
+    padding: 0 32px;
+    font-size: 6vw;
+}
 .productos{
     display: flex;
     flex-wrap: wrap;
@@ -243,9 +257,10 @@ h2{
 .producto{
     width: 47vw;
     height: 55vw;
-    border-radius: 8px;
-    background-color: lightgray;
+    border-radius: 15px;
+    background-color: rgb(46, 120, 180);
     margin: 3px;
+    box-shadow:0px 0px 9px -2px black
 }
 .producto img{
     width: 100%;
@@ -256,7 +271,7 @@ h2{
 }
 @media (min-width:480px){
     header{
-        height:21vh;
+        height:16vh;
     }
     .logo{
         display: inline-block;
@@ -296,22 +311,23 @@ h2{
 }
 @media (min-width:600px){
     header{
-        height: 30vh;
+        height: 26vh;
     }
     .logo{
-        top: 3px;
+        top: 0px;
         left: 36.7%;
         min-height: 35px;
         min-width: 75px;
         width: 50vw;
         height: 30vh;
-        max-width: 200px;
-        max-height: 110px;
+        max-width: 210px;
+        max-height: 116px;
     }
     .categoriaheader600px a{
         text-decoration: none;
         color: black;
-        font-weight: 550;
+        font-family: 'Staatliches', cursive;
+        font-weight: 500;
     }
     .categoriaheader600px a:hover{
         border-bottom:white solid 2px;
@@ -329,13 +345,17 @@ h2{
     .categoriaheader600px{
         position: absolute;
         display: inline-block;
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Staatliches', cursive;
         font-size: 28px;
         width: 100%;
         list-style-type: none;
         overflow: hidden;
         bottom: 0;
         z-index: 20;
+    }
+    .logosder{
+        font-size: 32px;
+        top: 10px;
     }
     .producto{
         width: 23vw;
@@ -368,15 +388,17 @@ h2{
 }
 #dwigth{
     position: relative;
-    right: 4px;
+    min-width:146px;
+    right: 15px;
 }
 #harryp{
     position: relative;
-    left:47px;
+    left:10px;
+    min-width: 145px;
 }
 #mounstruo{
     position: relative;
-    left: 40px;
+    left: 28px;
 }
 #batmantexto{
     position: relative;
@@ -385,15 +407,15 @@ h2{
 
 #dwigthtexto{
     position: relative;
-    left: 4px;
+    left: 5px;
 }
 #harryptexto{
     position: relative;
-    left: 50px;
+    left: 29px;
 }
 #mtexto{
     position: relative;
-    left: 20px;
+    left: 8px;
 }
 .imagenBarraAbierta{
     display: none;
@@ -411,37 +433,36 @@ h2{
     top: 17px;
     position: relative;
 }
-.logosder .fa-shopping-cart{
-    position: absolute;
-    float: right;
-    top: -195%;
-    font-size: 40px;
-    padding-top: 15px;
-    padding-right: 10px;
-}
-.logosder .fa-user{
-    position: absolute;
-    float: right;
-    right: 75px;
-    top: -200%;
-    font-size: 40px;
-    padding-top: 15px;
-    padding-right: 4px;
-}
-
 @media (min-width:768px){
     .logo{
-        top: 3px;
-        left: 40%;
-        min-height: 35px;
-        min-width: 75px;
+        top: -4px;
+        left: 33%;
+        min-height: 70px;
+        min-width: 150px;
         width: 50vw;
         height: 30vh;
-        max-width: 200px;
-        max-height: 110px;
+        max-width: 350px;
+        max-height: 156px;
+    }
+    header{
+        height: 31vh;
+    }
+    .logosder{
+        font-size: 40px;
+        top: 21px;
     }
 }
 @media (min-width:1024px){
+    .logo{
+        top: -4px;
+        left: 36%;
+        min-height: 70px;
+        min-width: 150px;
+        width: 50vw;
+        height: 30vh;
+        max-width: 350px;
+        max-height: 160px;
+    }
     #imgslider2{
         display: none;
     }
