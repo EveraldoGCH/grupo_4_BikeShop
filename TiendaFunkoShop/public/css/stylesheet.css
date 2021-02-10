@@ -14,7 +14,7 @@ body{
 }
 header{
     display: flex;
-    background: rgb(109, 109, 109);
+    background: rgb(124, 124, 124);
     min-height: 100px;
     width:100vw;
     height:14vh;
@@ -167,6 +167,9 @@ header{
     width: 20%;
     height: 50%;
 
+}
+.slidercompleto{
+    box-shadow:0px 1px 9px -1px black
 }
 @keyframes slideimagen{
     0%{left:0;}
