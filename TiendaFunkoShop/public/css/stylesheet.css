@@ -118,6 +118,7 @@ header{
     right: 5.5px;
     padding-top: 12px;
     color: black;
+    z-index: 10;
 }
 .logosder .fa-user{
     color: black;
