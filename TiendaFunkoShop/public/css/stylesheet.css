@@ -104,7 +104,7 @@ header{
     display: flex;
     position: absolute;
     display: inline-block;
-    padding-right: 4px;
+    padding-right: 7px;
     font-size: 26px;
     align-self:center;
     right: 0;
@@ -191,32 +191,20 @@ h2{
 }
 /*FOOTER*/
 .inner-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 0;
     padding: 0;
     background-color: #272727;
     width: 100vw;
+    height:9vh;
 }
-.social-links{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 9px;
-}
-.social-links a{
+.inner-footer a{
     font-size: 40px;
     color: white;
 }
-.social-items{
-    list-style: none;
-    flex: 1;
-    margin: 0 10px;
-}
-#social-items a{
-    color: #6cccc6;
-    transition: all .25s;
-}
-#social-items a:hover{
-    color: #5db3ad;
-}
+
 .outer-footer{
     display: block;
     padding: 10px;
@@ -225,10 +213,6 @@ h2{
     font-size: 16px;
     background-color: #3f3f3f;
     bottom:0;
-}
-#insta{
-    position: relative;
-    left: -48px;
 }
 /*TERMINA Footer*/
 
@@ -244,7 +228,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 98%;
     overflow-x:auto;
 }
 .fa-arrow-down{
@@ -302,15 +286,8 @@ h2{
         max-width: 165px;
         max-height: 165px;
     }
-    .social-links{
-       padding-top: 13px;;
-    }
     .inner-footer{
         height: 10vh;
-    }
-    #insta{
-        position: relative;
-        left: -48px;
     }
 }
 @media (min-width:600px){
@@ -437,6 +414,7 @@ h2{
     top: 17px;
     position: relative;
 }
+}
 @media (min-width:768px){
     .logo{
         top: -4px;
@@ -454,6 +432,13 @@ h2{
     .logosder{
         font-size: 40px;
         top: 21px;
+        padding-right: 13px;
+    }
+    .inner-footer{
+        height: 12vh;
+    }
+    .inner-footer a{
+        font-size: 45px;
     }
 }
 @media (min-width:1024px){
@@ -473,5 +458,10 @@ h2{
     #imgslidermobile{
         display: inline-block;
     }
-}
+    .inner-footer{
+        height: 14vh;
+    }
+    .inner-footer a{
+        font-size: 50px;
+    }
 }
