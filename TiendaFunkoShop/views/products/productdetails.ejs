@@ -3,7 +3,23 @@
     <%- include('.././partials/headIndexBarraLat')%>
 <body>
     <%- include ('.././partials/headerConBarraLat')%>
-
+    <section><!--Carrusel de detalle producto-->
+        <div id="imgslidermobile">
+            <figure class="figure2">
+                <img src="/images/spidermansincaja.png">
+                <img src="/images/spidermanconcaja.png">
+                <img src="/images/spidermansincaja.png">
+            </figure>
+        </div>
+    </section>
+    <div class="contenedorprecio">
+        <h2 class="nombreproducto">
+            spider-man: iron spider
+        </h2>
+        <form action="../products/cart.ejs" method="GET" id="botonagregar">
+            <button class="addcart" type="submit">+ Agregar al carrito</button>
+        </form>
+    </div>
     <%- include('.././partials/footer')%>
 </body>
 </html>
