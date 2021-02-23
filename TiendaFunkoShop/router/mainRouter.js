@@ -5,9 +5,9 @@ const router=express.Router()
 
 
 router.get('/', mainController.index)
-router.get('/login.ejs', mainController.login)
-router.get('/register.ejs', mainController.register)
-router.get('/productdetails.ejs', controllerProductos.productDetails)
-router.get('/cart.ejs', controllerProductos.carrito)
+router.get('/login', mainController.login)
+router.get('/register', mainController.register)
+router.get('/productdetails', controllerProductos.productDetails)
+router.get('/cart', controllerProductos.carrito)
 
 module.exports=router
