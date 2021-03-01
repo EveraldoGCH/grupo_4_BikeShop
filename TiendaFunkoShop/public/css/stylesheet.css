@@ -13,22 +13,24 @@ body{
     overflow-x: hidden;
 }
 header{
-    display: flex;
     background: rgb(124, 124, 124);
     min-height: 100px;
     width:100vw;
-    height:14vh;
     max-height: 300px;
-    justify-content: space-between;
 }
 .categoriaheader600px{
     display: none;
 }
 #content{
-    position: relative;
     transition: margin-left 0.6s;
     overflow: hidden;
     width: 100%;
+}
+#pruebaflex{
+    display:flex;
+    clear: both;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav{
     height: 100%;
@@ -57,10 +59,6 @@ header{
     color: black;
 }
 
-.nav a:hover{
-    color: lightgray;
-    transition: 0s;
-}
 .nav .close{
     position: relative;
     top:-7vw;
@@ -71,7 +69,6 @@ header{
     color: black;
     font-size: 40px;
     padding-left: 4px;
-    align-self: center;
 }
 .slide a{
     color:black
@@ -84,45 +81,36 @@ header{
 }
 
 .logo{
-    position: absolute;
-    display: inline-block;
-    top: 0px;
-    left: 29%;
-    min-height: 35px;
-    min-width: 75px;
+    display: flex;
+    position: relative;
+    align-items: center;
     width: 50vw;
-    height: 30vh;
-    max-width: 200px;
-    max-height: 110px;
+    right: -7vw;
+    top: 2px;
 }
 .logovertical{
-    position: absolute;
     display: none;
 }
 
 .logosder{
-    display: flex;
-    position: absolute;
-    display: inline-block;
-    padding-right: 7px;
     font-size: 26px;
-    align-self:center;
-    right: 0;
 }
+
 #usercarrito{
     color: black;
-    flex-direction: row-reverse;
+    align-items: stretch;
+    
 }
 .logosder .fa-shopping-cart{
     position: relative;
-    right: 5.5px;
-    padding-top: 12px;
     color: black;
     z-index: 10;
+    left: -5px;
 }
 .logosder .fa-user{
     color: black;
     min-width: 29.25px;
+    padding-bottom: 10px;
 }
 
 .imagenBarraAbierta{
@@ -137,6 +125,7 @@ header{
 #imgslidermobile{
     overflow: hidden;
 }
+
 #imgslidermobile figure{
     position:relative;
     width: 500%;
@@ -159,12 +148,45 @@ header{
     height: 50%;
 
 }
-#imgslidermobile .figure2 img{
+#imgslidermobile .picDetailProduct img{
     float: left;
     width: 30%;
     height: 50%;
 
 }
+/**CARRUSEL DETALLE DE PRODUCTO **/
+#imgslidermobilePDetails{
+    overflow: hidden;
+}
+#imgslidermobilePDetails figure{
+    position:relative;
+    width: 500%;
+    height: 50%;
+    margin: 0;
+    left: 0;
+    animation: 20s slideimagen infinite;
+}
+#imgslidermobilePDetails .picDetailProduct{
+    position:relative;
+    width: 300%;
+    height: 50%;
+    margin: 0;
+    left: 0;
+    animation: 10s slideimagen2 infinite;
+}
+#imgslidermobilePDetails figure img{
+    float: left;
+    width: 20%;
+    height: 50%;
+
+}
+#imgslidermobilePDetails .picDetailProduct img{
+    float: left;
+    width: 30%;
+    height: 50%;
+
+}
+/**TERMINA CARRUSEL DETALLE DE PRODUCTO **/
 #imgslider2{
     overflow: hidden;
     display: none;
@@ -220,6 +242,10 @@ h2{
 /*CARRUSEL DETALLE DE PRODUCTO*/
 
 /*TERMINA CARRUSEL DETALLE DE PRODUCTO*/
+#nuevosingresos{
+    position: relative;
+    top: 5px;
+}
 /*FOOTER*/
 .inner-footer{
     display: flex;
@@ -228,8 +254,6 @@ h2{
     margin: 0;
     padding: 0;
     background-color: #272727;
-    width: 100vw;
-    height:9vh;
 }
 .inner-footer a{
     font-size: 40px;
@@ -237,13 +261,18 @@ h2{
 }
 
 .outer-footer{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
     text-align: center;
     color: #fff;
     font-size: 16px;
     background-color: #3f3f3f;
     bottom:0;
+}
+.logofooter{
+    width: 35vw;
 }
 /*TERMINA Footer*/
 
@@ -257,15 +286,12 @@ h2{
 }
 .destacadosflechas{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     width: 98%;
     overflow-x:auto;
 }
-.fa-arrow-down{
-    padding: 0 32px;
-    font-size: 6vw;
-}
+
 .productos{
     display: flex;
     flex-wrap: wrap;
@@ -319,7 +345,7 @@ padding: 0 12px;
 .fa-user{
     padding: 0;
 }
-/*CARRITO CSS*/
+/*--------------------CARRITO CSS---------------*/
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 .container{
 	max-width: 1200px;
@@ -415,50 +441,16 @@ padding: 0 12px;
 .cart-total a:hover{
 	background-color: #3C76B9;
 }
-@media screen and (max-width: 700px){
-	.remove{
-		display: none;
-	}
-	.product{
-		height: 150px;
-	}
-	.product  >img{
-		height: 150px;
-		width: 200px;
-	}
-	.product-name, .product-price, .product-offer{
-		margin-bottom: 10px;
-	}
-}
-@media screen and (max-width: 900px){
-	.cart{
-		flex-direction: column;
-	}
-	.cart-total{
-		margin-left: 0;
-		margin-bottom: 20px;
-	}
-}
-@media screen and (max-width: 1220px){
-	.container{
-		max-width: 95%;
-	}
-}
-/*TERMINA CARRITO CSS*/
+/**----------------TERMINA CARRITO--------------**/
 @media (min-width:480px){
     header{
         height:16vh;
     }
     .logo{
-        display: inline-block;
-        top: 3px;
-        left: 32.5%;
-        min-height: 35px;
-        min-width: 75px;
-        width: 50vw;
-        height: 30vh;
-        max-width: 200px;
-        max-height: 110px;
+    width: 44vw;
+    right: -57px;
+    top: -0.3%;
+    max-width: 230px;
     }
     
     #imgslidermobile{
@@ -480,17 +472,13 @@ padding: 0 12px;
 }
 @media (min-width:600px){
     header{
-        height: 26vh;
+        height: 29vh;
     }
     .logo{
+        width: 44vw;
+        right: -12.5vw;
         top: 0px;
-        left: 36.7%;
-        min-height: 35px;
-        min-width: 75px;
-        width: 50vw;
-        height: 30vh;
-        max-width: 210px;
-        max-height: 116px;
+        max-width: 250px;
     }
     .categoriaheader600px a{
         text-decoration: none;
@@ -519,7 +507,6 @@ padding: 0 12px;
         width: 100%;
         list-style-type: none;
         overflow: hidden;
-        bottom: 0;
         z-index: 20;
     }
     .logosder{
@@ -552,7 +539,7 @@ padding: 0 12px;
     display: flex;
     width: 100%;
     justify-content: space-around;
-    bottom: 0px;
+    top: 7%;
     padding-right: 35px;
 }
 #dwigth{
@@ -605,17 +592,16 @@ padding: 0 12px;
 }
 @media (min-width:768px){
     .logo{
-        top: -4px;
-        left: 33%;
-        min-height: 70px;
-        min-width: 150px;
         width: 50vw;
-        height: 30vh;
-        max-width: 350px;
-        max-height: 156px;
+        right: -14vw;
+        top: 2px;
+        max-width: 274px;
     }
     header{
         height: 31vh;
+    }
+    .imagenesheader{
+        top: 9%;
     }
     .logosder{
         font-size: 40px;
@@ -631,14 +617,9 @@ padding: 0 12px;
 }
 @media (min-width:1024px){
     .logo{
-        top: -4px;
-        left: 36%;
-        min-height: 70px;
-        min-width: 150px;
         width: 50vw;
-        height: 30vh;
-        max-width: 350px;
-        max-height: 160px;
+        right: -16vw;
+        top: 2px;
     }
     #imgslider2{
         display: none;
