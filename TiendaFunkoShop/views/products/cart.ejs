@@ -5,15 +5,15 @@
 <body>
 	<%- include ('.././partials/headerConBarraLat')%>
 <div class="container">
-	<h1>Mi Carrito</h1>
+	<h1 class="miCarrito">Mi Carrito</h1>
 	<div class="cart">
 		<div class="products">
 			<div class="product">
-				<img src="/images/bellotacart.jpg">
+				<img src="/images/bellotacart.png">
 				<div class="product-info">
 					<h3 class="product-name">Funko pop! Buttercup</h3>
-					<h4 class="product-price">$3000</h4>
-					<h4 class="product-offer"></h4>
+					<p class="product-price">Precio: $3000</p>
+					<p class="product-offer"></p>
 					<p class="product-quantity">Cantidad: <input value="1" name="">
 					<p class="product-remove">
 						<i class="fa fa-trash" aria-hidden="true"></i>
@@ -22,11 +22,11 @@
 				</div>
 			</div>
 			<div class="product">
-				<img src="/images/batmancart.jpg">
+				<img src="/images/batmancart.png">
 				<div class="product-info">
 					<h3 class="product-name"> Funko pop! Batman Damned</h3>
-					<h4 class="product-price">$3000</h4>
-					<h4 class="product-offer"></h4>
+					<p class="product-price">Precio: $3000</p>
+					<p class="product-offer"></p>
 					<p class="product-quantity">Cantidad: <input value="1" name="">
 					<p class="product-remove">
 						<i class="fa fa-trash" aria-hidden="true"></i>
@@ -38,16 +38,17 @@
 		<div class="cart-total">
 			<p>
 				<span>Precio Total</span>
-				<span>$6000</span>
+				<span>ARS$6000</span>
 			</p>
 			<p>
 				<span>Numero de productos</span>
-				<span>2</span>
+				<span>...</span>
 			</p>
 			<a href="#">Finalizar mi compra</a>
 		</div>
 	</div>
 </div>
+<%- include('.././partials/productosBuscados.ejs')%>
 <%- include('.././partials/footer')%>
 </body>
 </html>

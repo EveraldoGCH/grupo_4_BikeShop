@@ -348,7 +348,6 @@ padding: 0 12px;
 /*--------------------CARRITO CSS---------------*/
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 .container{
-	max-width: 1200px;
 	margin: 0 auto;
 }
 .container  h1{
@@ -356,17 +355,25 @@ padding: 0 12px;
 }
 .cart{
 	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.miCarrito{
+    margin-left: 13px;
 }
 .products{
-	flex: 0.75;
+    margin: 10px;
 }
 .product{
 	display: flex;
 	width: 100%;
-	height: 200px;
+	height: 30vh;
 	overflow: hidden;
 	border: 1px solid silver;
 	margin-bottom: 20px;
+    background-color: rgb(46, 120, 180);
+    box-shadow:0px 0px 8px -1px black;
+    border-radius: 5px;
 }
 .product:hover{
 	border: none;
@@ -374,25 +381,29 @@ padding: 0 12px;
 	transform: scale(1.01);
 }
 .product img{
-	width: 300px;
-	height: 200px;
+	width: 50%;
+	height: 100%;
 	object-fit: cover;
+    position: relative;
+    top: -10px;
+    max-width: 380px;
 }
 .product img:hover{
 	transform: scale(1.04);
 }
 .product-info{
-	padding: 20px;
-	width: 100%;
+	padding: 10px;
+	width: 50%;
 	position: relative;
+    right: -6vw;
 }
 .product-name, .product-price, .product-offer{
 	margin-bottom: 20px;
+    font-size: 20px;
 }
 .product-remove{
 	position: absolute;
-	bottom: 20px;
-	right: 20px;
+	bottom: 10px;
 	padding: 10px 25px;
 	background-color: black;
 	color: white;
@@ -416,17 +427,20 @@ padding: 0 12px;
 }
 .cart-total{
 	flex: 0.25;
-	margin-left: 20px;
+	margin:10px;
 	padding: 20px;
-	height: 240px;
+    width: 95.5%;
+	height: 27vh;
 	border: 1px solid silver;
+    background-color: rgb(46, 120, 180);
+    box-shadow:0px 0px 8px -1px black;
 	border-radius: 5px;
 }
 .cart-total p{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 30px;
-	font-size: 20px;
+	font-size: 26px;
 }
 .cart-total a{
 	display: block;
@@ -602,6 +616,19 @@ padding: 0 12px;
     }
     .imagenesheader{
         top: 9%;
+    }
+    .cart{
+        justify-content: center;
+        align-items: center;
+    }
+    .products{
+        width: 50%;
+    }
+    .product-info{
+        right: 0;
+    }
+    .cart-total{
+
     }
     .logosder{
         font-size: 40px;
