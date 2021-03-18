@@ -1,0 +1,8 @@
+[{
+    "id_user": 1,
+    "name_user": "Nombre usuario",
+    "last_name": "apellido",
+    "email_user": "@",
+    "password": "contraseña",
+    "image": "x.jpg"
+  }]
