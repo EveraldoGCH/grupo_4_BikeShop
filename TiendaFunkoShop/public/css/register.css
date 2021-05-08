@@ -1,3 +1,6 @@
+img{
+    max-width: 100%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +12,7 @@ body {
 
 .caja-login {
     width: 320px;
-    height: 430px;
+    height: 450px;
     background: #000;
     color: #fff;
     top: 50%;
@@ -22,12 +25,11 @@ body {
 
 }
 .caja-login .logo{
-    width: 33%;
-    height: 35%;
-    border-radius: 50%;
+    width: 64%;
+    height: 22%;
     position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
+    top: 0%;
+    right: 18%;
 }
 .caja-login label{
     margin: 0;
@@ -62,7 +64,7 @@ body {
     
 }
 
-.caja-login input[type="submit"]{
+.botonregister{
     border: none;
     outline: none;
     height: 40px;
@@ -75,17 +77,27 @@ body {
 
 
 }
+.botonsubir{
+    position: relative;
+    top: 6px;
+    right: 5px;
+    background: #3C76B9;
+    color: #fff;
+    border-radius: 20px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
 .caja-login input[type="submit"]:hover{
     color:#fff;
     background: #CC1100;
 }
 .caja-login a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 10px;
     color: darkgray;
     transition-duration: 1s;
-    margin-left:15%;
+    margin-left:8%;
 
 }
 .caja-login a:hover{

@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Form login</title>
+    <title>Regístrate :)</title>
     <LINK REL=StyleSheet href='/css/register.css'>
+    <link rel="icon" type="image/png" href="/images/LOGO2.png"/>
 </head>
 
 <body>
     
     <div class="caja-login">
-        <a href="/"><img class ='logo' src="/images/logo-funkoShop.png" alt='LOGO'></a>
-                <h1>Regístrate</h1>
+        <a href="/"><img class ='logo' src="/images/LOGO2.png" alt='LOGO'></a>
         <form>
+             <!-- FOTO DE PERFIL -->
+             <label for="profilepic">Imagen de Perfil</label>
+             <input type="file" name="profileimg" accept="image/x-png,image/jpeg" class="botonsubir"/>
              <!-- NOMBRE COMPLETO -->
              <label for="nombrecompleto">Nombre completo</label>
              <input type="text" placeholder="Peter Parker">
@@ -23,9 +26,9 @@
             <label for="contraseña">Contraseña</label>
             <input type="password" placeholder="Ingresar contraseña">
             <!--BOTON-->
-            <input type="submit" value="Registrarme">
+            <input type="submit" value="Registrarme" class="botonregister">
             <!--AYUDAS LINKEADAS-->
-            <a href="../users/login.ejs">¿Ya tienes cuenta? Inicia sesión</a>
+            <a href="../users/login">¿Ya tienes cuenta? Inicia sesión</a>
             
         </form>
     </div>

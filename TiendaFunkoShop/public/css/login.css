@@ -22,12 +22,11 @@ body {
 
 }
 .caja-login .logo{
-    width: 33%;
-    height: 35%;
-    border-radius: 50%;
+    width: 66%;
+    height: 27%;
     position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
+    top: -8%;
+    right: 15%;
 
 }
 .caja-login label{
