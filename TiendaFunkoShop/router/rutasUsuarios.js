@@ -31,6 +31,6 @@ router.get('/profile', userController.profile)
 
 // Metodo POST
 router.post('/login', validarLoginForm, userController.loginProcess);
-router.post('/register', validarRegisterForm, uploadFile.single('profileimg'), userController.create);
+router.post('/register',uploadFile.single('profileimg'), validarRegisterForm, userController.create);
 
 module.exports = router;

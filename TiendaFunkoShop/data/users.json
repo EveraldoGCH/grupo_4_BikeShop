@@ -1,11 +1,10 @@
 [
  {
   "id": 1,
-  "profileimg":"",
+  "profileimg": "",
   "name": "Nombre usuario",
   "emai": "@",
   "password": "contraseña"
-  
  },
  {
   "id": 2,
@@ -13,5 +12,11 @@
   "name": "Everaldo Guevara",
   "email": "everaldoguevara@gmail.com",
   "password": "$2a$10$jEEtU2fy4JYv2sG39GUVtO68mSojVffVBj0qxRt3E7PFPbUmjzlYm"
+ },
+ {
+  "id": 3,
+  "name": "Everaldo Guevara",
+  "email": "eve_123-123@hotmail.com",
+  "password": "$2a$10$Zpp79Mi73bREjzS4s1dRvOcFhnj6ENxQFsMupw4efIzSMLeeDFEoq"
  }
 ]
