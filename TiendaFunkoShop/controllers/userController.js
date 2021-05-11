@@ -19,6 +19,8 @@ const userController = {
     register: function(req, res){
         res.render('./users/register');
     },
+    profile: function(req, res){
+        res.render('./users/profile')},
     // POST de login
     loginProcess: function (req,res){
         let errores = validationResult(req);

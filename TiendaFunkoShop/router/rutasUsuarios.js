@@ -27,6 +27,7 @@ const uploadFile = multer({storage: storage});
 // Metodo GET
 router.get('/login', guestMiddleware, userController.login);
 router.get('/register', guestMiddleware, userController.register);
+router.get('/profile', userController.profile)
 
 // Metodo POST
 router.post('/login', validarLoginForm, userController.loginProcess);

@@ -1,8 +1,17 @@
-[{
-    "id_user": 1,
-    "name_user": "Nombre usuario",
-    "last_name": "apellido",
-    "email_user": "@",
-    "password": "contraseña",
-    "image": "x.jpg"
-  }]
+[
+ {
+  "id": 1,
+  "profileimg":"",
+  "name": "Nombre usuario",
+  "emai": "@",
+  "password": "contraseña"
+  
+ },
+ {
+  "id": 2,
+  "profileimg": "",
+  "name": "Everaldo Guevara",
+  "email": "everaldoguevara@gmail.com",
+  "password": "$2a$10$jEEtU2fy4JYv2sG39GUVtO68mSojVffVBj0qxRt3E7PFPbUmjzlYm"
+ }
+]
