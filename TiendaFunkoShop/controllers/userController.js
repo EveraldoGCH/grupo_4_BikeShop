@@ -7,7 +7,7 @@ const bcrypt = require("bcryptjs");
 // Acceso a database
 const usersDataBase = path.join(__dirname, "../data/users.json");
 
-const User = require("../models/Users");
+const User = require("../models/User");
 
 // Controlador usuarios
 const userController = {
