@@ -103,3 +103,12 @@ body {
 .caja-login a:hover{
     color: #fff;
 }
+/* Para el texto de validar en formulario */
+.text-danger {
+    color: red;
+    margin: 10px;
+    font-size: 13px;
+}
+.is-invalid {
+    border: red solid 0.5px;
+}
