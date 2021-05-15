@@ -10,18 +10,22 @@ module.exports=function(sequelize, dataTypes){
         user_name:{
         type:dataTypes.STRING,
         allowNull:false},
+
+    user_email:{
+            type:dataTypes.STRING,
+            allowNull:false},
     
         password:{
         type:dataTypes.STRING,
         allowNull:false},
     
-        profiel_img:{
+        profile_img:{
         type:dataTypes.INTEGER,
-        allowNull:false}
+}
     };
     
     let config={
-        table_name:"users",
+        table_name:"Users",
         timestamps:false
     }
     
