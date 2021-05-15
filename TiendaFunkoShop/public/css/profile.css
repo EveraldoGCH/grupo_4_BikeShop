@@ -425,6 +425,13 @@ padding: 0 12px;
 .fa{
 	margin-right: 5px;
 }
+.profilepic{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 50vw;
+    right: -7vw;
+}
 .cart-total{
 	flex: 0.25;
 	margin:10px;
@@ -493,7 +500,7 @@ padding: 0 12px;
 }
 @media (min-width:600px){
     header{
-        height: 29vh;
+        height: 18vh;
     }
     .logo{
         width: 44vw;
@@ -619,7 +626,7 @@ padding: 0 12px;
         max-width: 274px;
     }
     header{
-        height: 31vh;
+        height: 22vh;
     }
     .imagenesheader{
         top: 9%;
