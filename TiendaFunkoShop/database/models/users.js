@@ -20,7 +20,7 @@ module.exports=function(sequelize, dataTypes){
         allowNull:false},
     
         profile_img:{
-        type:dataTypes.INTEGER,
+        type:dataTypes.STRING,
 }
     };
     
@@ -31,7 +31,7 @@ module.exports=function(sequelize, dataTypes){
     
     
         let Users=sequelize.define(alias, cols, config)
-    
+
         return Users
     }
     

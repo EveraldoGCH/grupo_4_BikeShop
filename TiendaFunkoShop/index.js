@@ -36,3 +36,6 @@ app.use('/users', rutasUsuarios)
 
 //SERVIDOR EXPRESS//
 app.listen(port, () => console.log('Servidor corriendo :)'));
+
+let basedir=__dirname
+module.exports=basedir
