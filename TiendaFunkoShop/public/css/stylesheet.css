@@ -227,6 +227,11 @@ h2{
     position: relative;
     top: 5px;
 }
+#listadoFunkosimg{
+    position: relative;
+    top: 20px;
+    padding-top: 15px;
+}
 /*FOOTER*/
 .inner-footer{
     display: flex;
@@ -624,7 +629,17 @@ padding: 0 12px;
     .product-info{
         right: 0;
     }
-
+    .padrebanners{
+        display: flex;
+        padding-top: 20px;
+    }
+    #nuevosingresos{
+        top: 5px;
+    }
+    #listadoFunkosimg{
+        top: 5px;
+        padding-top: 0px;
+    }
     .logosder{
         font-size: 40px;
         top: 21px;
@@ -685,5 +700,11 @@ padding: 0 12px;
     }
     .inner-footer a{
         font-size: 50px;
+    }
+    #listadoFunkosimg{
+height: 30vh;
+    }
+    #nuevosingresos{
+        height: 50vh;
     }
 }

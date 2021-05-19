@@ -13,6 +13,7 @@ router.get('/productdetails', controllerProductos.productDetails)
 router.get('/cart', controllerProductos.carrito)
 router.get('/createProduct',auhtMiddleware, adminMiddleware, controllerProductos.indexCreateProduct)
 router.get('/editProduct',auhtMiddleware, adminMiddleware, controllerProductos.editProduct)
+router.get('/productlist', controllerProductos.lista)
 
 // Metodo POST
 router.post('/createProduct',upload_file.single("imagenNewProduct"), controllerProductos.createProduct)

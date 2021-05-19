@@ -27,6 +27,10 @@ const controllerProductos={
         .then(function(){
          return res.redirect("./productdetails/:id")   
         })
+    },
+    lista: function(req, res){
+            db.Products.findByPk(req.params.id)
+            res.render('./products/ProductList');
     }
 }
 module.exports=controllerProductos
