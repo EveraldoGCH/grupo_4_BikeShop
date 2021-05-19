@@ -20,8 +20,11 @@ module.exports=function(sequelize, dataTypes){
         allowNull:false},
     
         profile_img:{
-        type:dataTypes.STRING,
-}
+        type:dataTypes.STRING},
+
+        admin_user:{
+            type:dataTypes.STRING},
+
     };
     
     let config={

@@ -5,9 +5,8 @@ const path = require("path");
 const bcrypt = require("bcryptjs");
 const db= require(".././database/models")
 const Users = require(".././database/models/Users.js");
-const multer = require("multer");
 
-// Acceso a database
+// Acceso a database JSON
 const usersDataBase = path.join(__dirname, "../data/users.json");
 
 
@@ -23,7 +22,10 @@ const userController = {
         res.render('./users/register');
     },
     profile: function(req, res){
-        res.render('./users/profile')},
+        console.log(req.session.userLogged)
+        res.render('./users/profile', {
+            user: req.session.userLogged
+        })},
 
         
     // POST de login
@@ -127,13 +129,21 @@ const userController = {
         user_email:req.body.email,
         // encriptar password
         password: bcrypt.hashSync(req.body.password, 10),
-        profile_img: req.file.filename
+        profile_img: req.file.filename,
+        admin_user: "no"
     })
     .then(function(){
-     return res.redirect("/users/login")   
+     return res.redirect("/users/login")
     })
 }
 })
-    }}
+    },
+// Para cerrar sesion y destruir cookies del usuario logueado
+logout: function(req,res) {
+    res.clearCookie("rememberUser");
+    req.session.destroy();
+    return res.redirect("/");
+}
+}
 
 module.exports = userController

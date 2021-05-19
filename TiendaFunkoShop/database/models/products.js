@@ -1,5 +1,5 @@
 module.exports=function(sequelize, dataTypes){
-let alias="Productos";
+let alias="Products";
 let cols={
     id_product:{
     type: dataTypes.INTEGER,
@@ -19,7 +19,7 @@ let cols={
     type:dataTypes.INTEGER,
     allowNull:false},
 
-    category:{
+    image_product:{
     type:dataTypes.STRING,
     allowNull:false
     }
@@ -31,7 +31,7 @@ let config={
 }
 
 
-    let Productos=sequelize.define(alias, cols, config)
+    let Products=sequelize.define(alias, cols, config)
 
-    return Productos
+    return Products
 }

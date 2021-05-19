@@ -38,7 +38,7 @@
                  <a href="/users/login"><i class="fas fa-user" id="usercarrito"></i></a></br>
                  <a href="/products/cart"><i class="fas fa-shopping-cart" id="usercarrito"></i></a>
               </span>
-           </div>
+             </div>
               
               <div id="menu" class="nav"><!--BARRA DE NAVEGACION MOBILE-->
                  <a href="#" class="close" onclick="closeSlideMenu()">
@@ -49,14 +49,20 @@
                  <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='/images/otrosFunko.jpg'>Originales</a>
                  <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='/images/koolaidFunko.jpg'>Todos</a>
               </div><!--TERMINA BARRA DE NAVEGACION MOBILE-->
-                 </header>
-             </div>
-             <section >
-                 <div>
-                     <img src="/images/profile_pics/avatar_default.png" class="profilepic">
+            </header>
+        </div>
+        <!--Usuario logged en la session-->
+        <main>
+            <p>Hola <%= user.user_name %></p>
+            <section >
+                <div>
+                    <img src="/images/profile_pics/<%= user.profile_img %>" class="profilepic">
 
-                 </div>
-             </section>
+                </div>
+            </section>
+            <!--BOTON DE CERRAR SESION-->
+            <button><a href="/users/logout">Cerrar sesion</a></button>
+        </main>            
         
         <%- include('../partials/footer')%>
     </body>

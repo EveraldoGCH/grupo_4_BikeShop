@@ -148,45 +148,6 @@ header{
     height: 50%;
 
 }
-#imgslidermobile .picDetailProduct img{
-    float: left;
-    width: 30%;
-    height: 50%;
-
-}
-/**CARRUSEL DETALLE DE PRODUCTO **/
-#imgslidermobilePDetails{
-    overflow: hidden;
-}
-#imgslidermobilePDetails figure{
-    position:relative;
-    width: 500%;
-    height: 50%;
-    margin: 0;
-    left: 0;
-    animation: 20s slideimagen infinite;
-}
-#imgslidermobilePDetails .picDetailProduct{
-    position:relative;
-    width: 300%;
-    height: 50%;
-    margin: 0;
-    left: 0;
-    animation: 10s slideimagen2 infinite;
-}
-#imgslidermobilePDetails figure img{
-    float: left;
-    width: 20%;
-    height: 50%;
-
-}
-#imgslidermobilePDetails .picDetailProduct img{
-    float: left;
-    width: 30%;
-    height: 50%;
-
-}
-/**TERMINA CARRUSEL DETALLE DE PRODUCTO **/
 #imgslider2{
     overflow: hidden;
     display: none;
@@ -233,15 +194,35 @@ header{
     100%{left: -175%;}
 }
 /*Termina carrusel de productos*/
+
+/*DETALLE DE PRODUCTO*/
+.padreFlexDetalleProducto{
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.padreFlexDetalleProducto img{
+    border-radius: 15px;
+    background-color: rgb(46, 120, 180);
+    margin: 3px;
+    box-shadow: 0px 0px 9px -2px black;
+}
+
+.precioproducto{
+    font-size: 40px;
+}
+
+
+
+
+/*TERMINA DETALLE DE PRODUCTO*/
 h2{
     font-family: 'Staatliches', cursive;
     font-weight: 350;
     top: 0;
 }
 
-/*CARRUSEL DETALLE DE PRODUCTO*/
-
-/*TERMINA CARRUSEL DETALLE DE PRODUCTO*/
 #nuevosingresos{
     position: relative;
     top: 5px;
@@ -298,6 +279,7 @@ h2{
     padding: 6px;
     justify-content: center;
 
+
 }
 .producto{
     width: 47vw;
@@ -315,10 +297,18 @@ padding: 0 12px;
     font-size: 40px;
     text-align: center;
 }
+.descriproducto{
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    padding: 15px 0px;
+}
+
 .contenedorprecio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
 }
 .addcart{
@@ -639,6 +629,37 @@ padding: 0 12px;
         font-size: 40px;
         top: 21px;
         padding-right: 13px;
+    }
+    .padreFlexDetalleProducto{
+        display: inline-block;
+        width: 51vw;
+
+    }
+    .padreFlexDetalleProducto img{
+        width: 55vw;
+        border-radius: 15px;
+        background-color: rgb(46, 120, 180);
+        margin: 3px;
+        box-shadow: 0px 0px 9px -2px black;
+    }
+    .padre768px{
+        display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: stretch;
+            padding-top: 30px;
+    }
+    .contenedorprecio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .nombreproducto{
+        font-size:34px;
     }
     .inner-footer{
         height: 12vh;

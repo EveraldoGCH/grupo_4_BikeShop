@@ -4,8 +4,12 @@ const path = require('path');
 
 const storage = multer.diskStorage({
     destination: function(req,file,cb){
-        let folder = path.join(__dirname + "/public/images/profile_pics");
-        cb(null,folder);
+        if(req.path=="/createProduct"){
+        let folder = path.join(__dirname + "/public/images");
+        cb(null,folder);}
+        else if (req.path=="/register"){
+            let folder = path.join(__dirname + "/public/images/profile_pics");
+            cb(null,folder);}
     },
     filename: function(req,file,cb){
         let name = Date.now() + path.extname(file.originalname);

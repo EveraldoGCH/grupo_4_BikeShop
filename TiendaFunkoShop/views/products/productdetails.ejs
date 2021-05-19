@@ -3,23 +3,26 @@
     <%- include('../partials/headIndexBarraLat')%>
 <body>
     <%- include ('../partials/headerConBarraLat')%>
-    <section><!--Carrusel de detalle producto-->
-        <div id="imgslidermobilePDetails">
-            <figure class="picDetailProduct">
+    <section class="padre768px"><!--detalle producto-->
+        <div class="padreFlexDetalleProducto">
                 <img src="/images/spidermansincaja.png">
-                <img src="/images/spidermanconcaja.png">
-                <img src="/images/spidermansincaja.png">
-            </figure>
         </div>
-    </section>
+    
     <div class="contenedorprecio">
         <h2 class="nombreproducto">
             spider-man: iron spider
         </h2>
+        <h4 class="descriproducto">
+            Muñeco tipo Funko de 15cm para coleccionar.
+        </h4>
+        <h5 class="precioproducto">
+            1300
+        </h5>
         <form action="../products/cart.ejs" method="GET" id="botonagregar">
             <button class="addcart" type="submit" name="addcart">+ Agregar al carrito</button>
         </form>
     </div>
+</section>
     <%- include('../partials/productosBuscados')%>
     <%- include('../partials/footer')%>
 </body>
