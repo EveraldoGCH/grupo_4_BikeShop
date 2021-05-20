@@ -60,7 +60,20 @@
             <label for="precioNewProduct">Precio:</label>
             <input type="text" name="precioNewProduct"><br>
             <label for="categoryNewProduct">Categoría:</label>
-            <input type="text" name="categoryNewProduct"><br>
+            <select name="categoryNewProduct">
+                <option value="heroe">
+                    Heores
+                </option>
+                <option value="movie">
+                    Peiculas
+                </option>
+                <option value="serie">
+                    Series
+                </option>
+                <option value="original">
+                    Originales
+                </option>
+            </select><br>
             <label for="file">Imagen del Producto:</label>
             <input type="file" name="imagenNewProduct" accept="image/*"><br>
             <button type="submit" class="addcart" formmethod="POST">Crear Producto</button>

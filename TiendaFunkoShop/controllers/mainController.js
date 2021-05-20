@@ -4,7 +4,9 @@ const Porducts = require(".././database/models/products");
 
 const mainController={
     index: function(req, res) {
-        db.Products.findAll()
+        db.Products.findAll({
+            limit:9
+        })
         .then(function(productos){
             return res.render('index', {productos:productos});
         })

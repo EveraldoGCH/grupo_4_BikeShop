@@ -12,12 +12,14 @@ const auhtMiddleware = require("../middlewares/authMiddleware")
 router.get('/productdetails/:id', controllerProductos.productDetails)
 router.get('/cart', controllerProductos.carrito)
 router.get('/createProduct',auhtMiddleware, adminMiddleware, controllerProductos.indexCreateProduct)
-router.get('/editProduct',auhtMiddleware, adminMiddleware, controllerProductos.editProduct)
+router.get('/editProduct/:id',auhtMiddleware, adminMiddleware, controllerProductos.editProduct)
 router.get('/productlist', controllerProductos.lista)
 router.get('/vistaNoAdmin', controllerProductos.noAdmin)
+router.get('/:categoria', controllerProductos.category)
 
 // Metodo POST
 router.post('/createProduct',upload_file.single("imagenNewProduct"), controllerProductos.createProduct)
+router.post('/editProduct/:id', controllerProductos.editProductPost)
 
 
 module.exports=router

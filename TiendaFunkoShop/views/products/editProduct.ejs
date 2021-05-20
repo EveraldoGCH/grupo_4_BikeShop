@@ -3,20 +3,31 @@
     <%- include('.././partials/headIndexBarraLat')%>
     <body>
         <h1>Editar un Producto:</h1><br>
-        <form action="/editProduct" method="GET" id="createProduct">
-            <label for="idProductEdit">ID del Producto:</label>
-            <input type="text" name="idProductEdit"><br>
+        <form action="./<%=productoedit.id_product%>" method="POST" id="createProduct" enctype="multipart/form-data">
             <label for="nameProductEdit">Nombre del Producto:</label>
-            <input type="text" name="nameProductEdit"><br>
+            <input type="text" name="nameProductEdit" value="<%=productoedit.name_product%>"><br>
             <label for="descripEditProduct">Descripción:</label>
-            <input type="text" name="descripEditProduct"><br>
+            <input type="text" name="descripEditProduct" value="<%=productoedit.product_description%>"><br>
             <label for="precioEditProduct">Precio:</label>
-            <input type="text" name="precioEditProduct"><br>
+            <input type="text" name="precioEditProduct" value="<%=productoedit.price%>"><br>
             <label for="categoryEditProduct">Categoría:</label>
-            <input type="text" name="categoryEditProduct"><br>
+            <select name="categoryNewProduct">
+                <option value="heroe">
+                    Héroes
+                </option>
+                <option value="movie">
+                    Peiculas
+                </option>
+                <option value="serie">
+                    Series
+                </option>
+                <option value="original">
+                    Originales
+                </option>
+            </select><br>
             <button type="submit" class="addcart" formmethod="POST">Editar Producto</button><br>
             
           </form>
-          <a href="../"><button>Inicio</button></a>
+          <a href="/"><button>Inicio</button></a>
     </body>
 </html>

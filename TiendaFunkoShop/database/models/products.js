@@ -22,7 +22,9 @@ let cols={
     image_product:{
     type:dataTypes.STRING,
     allowNull:false
-    }
+    },
+    category:{
+        type:dataTypes.STRING}
 };
 
 let config={

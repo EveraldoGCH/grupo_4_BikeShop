@@ -18,13 +18,37 @@ const controllerProductos={
         res.render('./products/createProduct')
     },
     editProduct:function(req,res){
-        res.render('./products/editProduct')
+        db.Products.findByPk(req.params.id)
+        .then(function(productoedit){
+         res.render('./products/editProduct', {productoedit:productoedit})   
+        })
+        
     },
+
+    editProductPost: function(req,res){
+        let producto=db.Products.findByPk(req.params.id)
+            db.Products.update({
+            name_product: req.body.nombreNewProduct,
+            product_description:req.body.descripNewProduct,
+            price: req.body.precioNewProduct,
+            category:req.body.categoryNewProduct,
+            image_product: producto.image_product
+        },
+        {
+            where:{
+                id:req.params.id
+            }
+        })
+        res.redirect("/products/productdetails/"+req.params.id)
+    
+    },
+
     createProduct:function(req,res){
         db.Products.create({
             name_product: req.body.nombreNewProduct,
             product_description:req.body.descripNewProduct,
             price: req.body.precioNewProduct,
+            category:req.body.categoryNewProduct,
             image_product: req.file.filename
         })
         .then(function(){
@@ -42,6 +66,14 @@ const controllerProductos={
             return res.render('./products/vistaNoAdmin');
         
         
+},
+category: function(req, res){
+    db.Products.findAll({where: {
+        category: req.params.categoria
+    }})
+    .then(function(productos){
+        return res.render('./products/category', {productos:productos});
+    })
 }
 }
 module.exports=controllerProductos

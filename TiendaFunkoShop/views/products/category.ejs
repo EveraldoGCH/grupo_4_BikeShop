@@ -1,10 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <%- include('.././partials/headIndexBarraLat')%>
+    <body>
+        <%- include('.././partials/headerConBarraLat')%>
 <section class="banner">
 <h1>
+
 </h1>
 </section>
 <div class="productos">
     <% for (let i=0; i < productos.length; i++) { %>
-        <a href="./products/productdetails/<%=productos[i].id_product%>"><article class="producto">
+        <a href="./productdetails/<%=productos[i].id_product%>"><article class="producto">
             <img src="/images/<%=productos[i].image_product%>" alt="<%=productos[i].name_product%>">
             <div class="divprecioimg">
                 <h4 class="nombreproducto"><%=productos[i].name_product%></h4>
@@ -14,3 +20,7 @@
         </article></a>
     <% } %>    
 </div>
+
+        <%- include('.././partials/footer')%>
+    </body>
+</html>
