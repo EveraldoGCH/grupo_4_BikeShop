@@ -6,7 +6,10 @@ const fs = require("fs");
 const controllerProductos={
     productDetails: function(req, res){
         db.Products.findByPk(req.params.id)
-        res.render('./products/productdetails');
+        .then(function(producto){
+            res.render('./products/productdetails', {producto:producto});
+        })
+        
     },
     carrito:function(req, res){
         res.render('./products/cart')
@@ -29,8 +32,16 @@ const controllerProductos={
         })
     },
     lista: function(req, res){
-            db.Products.findByPk(req.params.id)
-            res.render('./products/ProductList');
-    }
+            db.Products.findAll()
+            .then(function(productos){
+                return res.render('./products/ProductList', {productos:productos});
+            })
+            
+    },
+    noAdmin: function(req, res){
+            return res.render('./products/vistaNoAdmin');
+        
+        
+}
 }
 module.exports=controllerProductos

@@ -23,47 +23,33 @@
         </script>
     </head> <!--TERMINA HEAD DE PROFILE-->
     <body>
-        <div id="content">
-            <header><!--HEADER-->
-              <div id="pruebaflex">
-                <span class="slide"><!--slider-->
-                    <a href="#" onclick="openSlideMenu()">
-                 <i class="fas fa-bars"></i></a>
-              </span>
-        
-              <a href="/"><img class="logo" src="/images/LOGO2.png" alt='LOGO'></a><!--LOGO-->
-              <a href="/"><img class="logovertical" src="/images/logo-funkoShop.png" alt='LOGO'></a><!--LOGO(ACTUALMENTE SIN USO)-->
-             
-              <span class="logosder"><!--Carrito y user logos-->
-                 <a href="/users/login"><i class="fas fa-user" id="usercarrito"></i></a></br>
-                 <a href="/products/cart"><i class="fas fa-shopping-cart" id="usercarrito"></i></a>
-              </span>
-             </div>
-              
-              <div id="menu" class="nav"><!--BARRA DE NAVEGACION MOBILE-->
-                 <a href="#" class="close" onclick="closeSlideMenu()">
-                 <i class="fas fa-times"></i></a>
-                 <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='/images/batmanfunko.jpg'>Héroes</a>
-                 <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='/images/dwightFunko.jpg'>Series</a>
-                 <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='/images/jackFunko.jpg'>Películas</a>
-                 <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='/images/otrosFunko.jpg'>Originales</a>
-                 <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='/images/koolaidFunko.jpg'>Todos</a>
-              </div><!--TERMINA BARRA DE NAVEGACION MOBILE-->
-            </header>
-        </div>
+    
         <!--Usuario logged en la session-->
-        <main>
-            <p>Hola <%= user.user_name %></p>
+        <main class="padreperfil">
+            <p class="nombreperfil">Hola <%= user.user_name %>!</p>
             <section >
-                <div>
+                <div class="fotoperfil">
                     <img src="/images/profile_pics/<%= user.profile_img %>" class="profilepic">
 
                 </div>
             </section>
-            <!--BOTON DE CERRAR SESION-->
-            <button><a href="/users/logout">Cerrar sesion</a></button>
-        </main>            
-        
+            
+        </main>
+        <div class="cajaedicion">
+            <p class="editarperfiltexto">editar</p>
+            <form type="file" action="/" method="METODO" id="formeditperfil" enctype="multipart/form-data">
+                <label for="nuevoNombreEdit">Nombre:</label>
+                <input class="nombrebarra" type="text" name="nuevoNombreEdit" placeholder="Nuevo nombre"><br>
+                <label for="nuevaContraseñaEdit">Contraseña:</label>
+                <input class="contrabarra" type="password" name="nuevaContraseñaEdit" placeholder="Nueva contraseña"><br>
+                <button type="submit" class="botoneditarperfil" formmethod="POST">Editar Perfil</button>
+              </form>
+        </div>
+
+        <!--BOTON DE CERRAR SESION--><br>
+        <button class="cerrarsesion"><a href="/users/logout">Cerrar sesión</a></button>
+        <br>
+        <br>
         <%- include('../partials/footer')%>
     </body>
 </html>

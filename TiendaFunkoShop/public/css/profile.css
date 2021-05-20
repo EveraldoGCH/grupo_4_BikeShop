@@ -8,6 +8,7 @@ img{
 }
 body{
     width: 100%;
+    height: 100%;
     background-color: rgb(65, 143, 207);
     font-family:'Staatliches', cursive;
     overflow-x: hidden;
@@ -148,45 +149,6 @@ header{
     height: 50%;
 
 }
-#imgslidermobile .picDetailProduct img{
-    float: left;
-    width: 30%;
-    height: 50%;
-
-}
-/**CARRUSEL DETALLE DE PRODUCTO **/
-#imgslidermobilePDetails{
-    overflow: hidden;
-}
-#imgslidermobilePDetails figure{
-    position:relative;
-    width: 500%;
-    height: 50%;
-    margin: 0;
-    left: 0;
-    animation: 20s slideimagen infinite;
-}
-#imgslidermobilePDetails .picDetailProduct{
-    position:relative;
-    width: 300%;
-    height: 50%;
-    margin: 0;
-    left: 0;
-    animation: 10s slideimagen2 infinite;
-}
-#imgslidermobilePDetails figure img{
-    float: left;
-    width: 20%;
-    height: 50%;
-
-}
-#imgslidermobilePDetails .picDetailProduct img{
-    float: left;
-    width: 30%;
-    height: 50%;
-
-}
-/**TERMINA CARRUSEL DETALLE DE PRODUCTO **/
 #imgslider2{
     overflow: hidden;
     display: none;
@@ -233,18 +195,43 @@ header{
     100%{left: -175%;}
 }
 /*Termina carrusel de productos*/
+
+/*DETALLE DE PRODUCTO*/
+.padreFlexDetalleProducto{
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.padreFlexDetalleProducto img{
+    border-radius: 15px;
+    background-color: rgb(46, 120, 180);
+    margin: 3px;
+    box-shadow: 0px 0px 9px -2px black;
+}
+
+.precioproducto{
+    font-size: 40px;
+}
+
+
+
+
+/*TERMINA DETALLE DE PRODUCTO*/
 h2{
     font-family: 'Staatliches', cursive;
     font-weight: 350;
     top: 0;
 }
 
-/*CARRUSEL DETALLE DE PRODUCTO*/
-
-/*TERMINA CARRUSEL DETALLE DE PRODUCTO*/
 #nuevosingresos{
     position: relative;
     top: 5px;
+}
+#listadoFunkosimg{
+    position: relative;
+    top: 20px;
+    padding-top: 15px;
 }
 /*FOOTER*/
 .inner-footer{
@@ -298,6 +285,7 @@ h2{
     padding: 6px;
     justify-content: center;
 
+
 }
 .producto{
     width: 47vw;
@@ -315,12 +303,107 @@ padding: 0 12px;
     font-size: 40px;
     text-align: center;
 }
+.descriproducto{
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    padding: 15px 0px;
+}
+
 .contenedorprecio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
 }
+/*PERFIL*/
+.padreperfil{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+.nombreperfil{
+    font-size: 8vw;
+}
+.fotoperfil{
+    max-width: 200px;
+    width: 90%;
+}
+.fotoperfil img{
+    border-radius: 20%;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 16%);
+}
+.cajaedicion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    border-radius: 20px;
+    background-color: rgb(46, 120, 180);
+    box-shadow: 0 4px 6px rgb(0 0 0 / 16%);
+    margin: 0 5px;
+    padding: 8px;
+}
+.editarperfiltexto{
+    font-size: 7vw;
+    margin: 5px;
+}
+#formeditperfil{
+padding: 1px;
+}
+#formeditperfil input{
+    padding: 5px;
+}
+#formeditperfil label{
+    font-size: 5vw;
+    }
+.nombrebarra{
+    margin-left: 34px;
+    margin-bottom: 9px;
+    width: 50%;
+    font-size: 3vw;
+}
+.contrabarra{
+    width: 50%;
+    margin-bottom: 9px;
+    margin-left: -2px;
+    font-size: 3vw;
+}
+
+.botoneditarperfil{
+    text-align: center;
+    position: relative;
+    left: 16vw;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 5vw;
+    font-family: 'Staatliches', cursive;
+    border-radius: 6px;
+    border: 2px solid rgb(124, 124, 124);
+}
+.botoneditarperfil:hover{
+    color: white;
+    background-color: black;
+    box-shadow:0px 0px 9px -2px black;
+  }
+  .cerrarsesion{
+    text-align: center;
+    position: relative;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 3vw;
+    font-family: 'Staatliches', cursive;
+    border-radius: 6px;
+    border: 2px solid rgb(124, 124, 124);
+    float: right;
+  }
+  .cerrarsesion a{
+      text-decoration: none;
+      color: black;
+  }
 .addcart{
     text-align: center;
     padding: 10px 15px;
@@ -425,13 +508,6 @@ padding: 0 12px;
 .fa{
 	margin-right: 5px;
 }
-.profilepic{
-    display: flex;
-    position: relative;
-    align-items: center;
-    width: 50vw;
-    right: -7vw;
-}
 .cart-total{
 	flex: 0.25;
 	margin:10px;
@@ -500,7 +576,7 @@ padding: 0 12px;
 }
 @media (min-width:600px){
     header{
-        height: 18vh;
+        height: 29vh;
     }
     .logo{
         width: 44vw;
@@ -626,7 +702,7 @@ padding: 0 12px;
         max-width: 274px;
     }
     header{
-        height: 22vh;
+        height: 31vh;
     }
     .imagenesheader{
         top: 9%;
@@ -641,11 +717,52 @@ padding: 0 12px;
     .product-info{
         right: 0;
     }
-
+    .padrebanners{
+        display: flex;
+        padding-top: 20px;
+    }
+    #nuevosingresos{
+        top: 5px;
+    }
+    #listadoFunkosimg{
+        top: 5px;
+        padding-top: 0px;
+    }
     .logosder{
         font-size: 40px;
         top: 21px;
         padding-right: 13px;
+    }
+    .padreFlexDetalleProducto{
+        display: inline-block;
+        width: 51vw;
+
+    }
+    .padreFlexDetalleProducto img{
+        width: 55vw;
+        border-radius: 15px;
+        background-color: rgb(46, 120, 180);
+        margin: 3px;
+        box-shadow: 0px 0px 9px -2px black;
+    }
+    .padre768px{
+        display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: stretch;
+            padding-top: 30px;
+    }
+    .contenedorprecio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .nombreproducto{
+        font-size:34px;
     }
     .inner-footer{
         height: 12vh;
@@ -666,10 +783,9 @@ padding: 0 12px;
     #imgslidermobile{
         display: inline-block;
     }
-    .inner-footer{
-        height: 14vh;
+    
+    #nuevosingresos{
+        height: 50vh;
     }
-    .inner-footer a{
-        font-size: 50px;
-    }
+
 }

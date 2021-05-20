@@ -5,25 +5,30 @@
     <%- include ('../partials/headerConBarraLat')%>
     <section class="padre768px"><!--detalle producto-->
         <div class="padreFlexDetalleProducto">
-                <img src="/images/spidermansincaja.png">
+                <img src="/images/<%=producto.image_product%>">
         </div>
     
     <div class="contenedorprecio">
         <h2 class="nombreproducto">
-            spider-man: iron spider
+            <%=producto.name_product%>
         </h2>
-        <h4 class="descriproducto">
-            Muñeco tipo Funko de 15cm para coleccionar.
+        <h4 class="descripcionproducto">
+            <%=producto.product_description%>
         </h4>
         <h5 class="precioproducto">
-            1300
+            precio: <%=producto.price%>
         </h5>
         <form action="../products/cart.ejs" method="GET" id="botonagregar">
             <button class="addcart" type="submit" name="addcart">+ Agregar al carrito</button>
         </form>
     </div>
 </section>
-    <%- include('../partials/productosBuscados')%>
-    <%- include('../partials/footer')%>
+<div>
+<button class="crearproducto"><a href="../createProduct">Crear Producto</a></button>
+<button class="editarproducto"><a href="../editProduct">Editar Producto</a></button>
+<br>
+<br>
+</div>
+<%- include('../partials/footer')%>
 </body>
 </html>

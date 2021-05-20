@@ -1,11 +1,17 @@
-<div>
-    <section class="destacadosflechas">
-    <h2 class="destacados">Destacados</h2>
- </section>
-    <div class="productos">
-        <article class="producto"><a href="./products/productdetails"><img src="/images/HarryPotter1.png" onmouseover="this.src='/images/harryPotter2.png'" onmouseout="this.src='/images/HarryPotter1.png'"></a></article>
-        <article class="producto"><a href="./products/productdetails"><img src="/images/dwigth1.png" onmouseover="this.src='/images/dwigth1.png'" onmouseout="this.src='/images/dwigth2.png'"></a></article>
-        <article class="producto"><a href="./products/productdetails"><img src="/images/yoda2.png" onmouseover="this.src='/images/yoda.png'" onmouseout="this.src='/images/yoda2.png'"></a></article>
-        <article class="producto"><a href="./products/productdetails"><img src="/images/joker1.png" onmouseover="this.src='/images/joker2.png'" onmouseout="this.src='/images/joker1.png'"></a></article>
-    </div>
+<section class="banner">
+<h1>
+    Listado de Funko's
+</h1>
+</section>
+<div class="productos">
+    <% for (let i=0; i < productos.length; i++) { %>
+        <a href="./products/productdetails/<%=productos[i].id_product%>"><article class="producto">
+            <img src="/images/<%=productos[i].image_product%>" alt="<%=productos[i].name_product%>">
+            <div class="divprecioimg">
+                <h4 class="nombreproducto"><%=productos[i].name_product%></h4>
+                <p class="descripcionproducto"><%=productos[i].product_description%></p>
+                <p class="precioproducto">precio: <%=productos[i].price%></p>
+            </div>
+        </article></a>
+    <% } %>    
 </div>

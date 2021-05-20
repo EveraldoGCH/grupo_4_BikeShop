@@ -5,6 +5,7 @@ const path = require("path");
 const bcrypt = require("bcryptjs");
 const db= require(".././database/models")
 const Users = require(".././database/models/Users.js");
+const Products = require(".././database/models/products.js");
 
 // Acceso a database JSON
 const usersDataBase = path.join(__dirname, "../data/users.json");
@@ -22,10 +23,8 @@ const userController = {
         res.render('./users/register');
     },
     profile: function(req, res){
-        console.log(req.session.userLogged)
-        res.render('./users/profile', {
-            user: req.session.userLogged
-        })},
+        return res.render('./users/profile', {user: req.session.userLogged})
+    },
 
         
     // POST de login
