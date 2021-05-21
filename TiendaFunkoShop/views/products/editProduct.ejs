@@ -5,11 +5,23 @@
         <h1>Editar un Producto:</h1><br>
         <form action="./<%=productoedit.id_product%>" method="POST" id="createProduct" enctype="multipart/form-data">
             <label for="nameProductEdit">Nombre del Producto:</label>
-            <input type="text" name="nameProductEdit" value="<%=productoedit.name_product%>"><br>
+            <input type="text" name="nameProductEdit" id="nameProduct" value="<%=productoedit.name_product%>"><br>
+            <!--MENSAJE DE ERROR-->
+            <div>
+                <small class="text-danger erNameP"></small>
+            </div>
             <label for="descripEditProduct">Descripción:</label>
-            <input type="text" name="descripEditProduct" value="<%=productoedit.product_description%>"><br>
+            <input type="text" name="descripEditProduct" id="descProduct" value="<%=productoedit.product_description%>"><br>
+            <!--MENSAJE DE ERROR-->
+            <div>
+                <small class="text-danger erDesc"></small>
+            </div>
             <label for="precioEditProduct">Precio:</label>
-            <input type="text" name="precioEditProduct" value="<%=productoedit.price%>"><br>
+            <input type="text" name="precioEditProduct" id="precioProduct" value="<%=productoedit.price%>"><br>
+            <!--MENSAJE DE ERROR-->
+            <div>
+                <small class="text-danger erPrecio"></small>
+            </div>
             <label for="categoryEditProduct">Categoría:</label>
             <select name="categoryNewProduct">
                 <option value="heroe">

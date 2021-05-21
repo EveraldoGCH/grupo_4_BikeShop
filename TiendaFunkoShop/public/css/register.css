@@ -12,7 +12,7 @@ body {
 
 .caja-login {
     width: 320px;
-    height: 450px;
+    height: 500px;
     background: #000;
     color: #fff;
     top: 50%;
@@ -25,11 +25,12 @@ body {
 
 }
 .caja-login .logo{
-    width: 64%;
+    width: 66%;
     height: 22%;
     position: absolute;
-    top: 0%;
-    right: 18%;
+    top: -2%;
+    right: 15%;
+
 }
 .caja-login label{
     margin: 0;
@@ -108,6 +109,8 @@ body {
     color: red;
     margin: 10px;
     font-size: 13px;
+    position: relative;
+    top: -7px;
 }
 .is-invalid {
     border: red solid 0.5px;

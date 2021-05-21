@@ -86,7 +86,6 @@ header{
     position: relative;
     align-items: center;
     width: 50vw;
-    right: -7vw;
     top: 2px;
 }
 .logovertical{
@@ -196,6 +195,61 @@ header{
 }
 /*Termina carrusel de productos*/
 
+/*BARRA DE BUSQUEDA*/
+.searchproduct{
+    position: relative;
+    top: 4.5vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+.inputsearchproduct{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.fa-search{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 3.2vh;
+    transition: all 0.3s;
+}
+.searchproduct:hover{
+    width: 80vw;
+    cursor: pointer;
+}
+.searchproduct:hover .inputsearchproduct{
+    display: block;
+}
+.searchproduct:hover .fa-search{
+    background: #07051a;
+    color: white;
+}
+/*TERMINA BARRA DE BUSQUEDA*/
 /*DETALLE DE PRODUCTO*/
 .padreFlexDetalleProducto{
     width: 100vw;
@@ -286,6 +340,11 @@ h2{
     justify-content: center;
 
 
+}
+.text-danger {
+    color: red;
+    margin: 10px;
+    font-size: 13px;
 }
 .banner{
     text-align: center;
@@ -454,9 +513,6 @@ h2{
 	padding: 5px;
 	text-align: center;
 }
-.fa{
-	margin-right: 5px;
-}
 .cart-total{
 	flex: 0.25;
 	margin:10px;
@@ -499,10 +555,25 @@ h2{
     header{
         height:16vh;
     }
-
+    .searchproduct:hover{
+        width: 76vw;
+    }
+    .fa-search{
+        box-sizing: border-box;
+    padding: 10px;
+    width: 49.5px;
+    height: 46.5px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.6em;
+    transition: all 0.3s;
+    }
     .logo{
     width: 44vw;
-    right: -57px;
     top: -0.3%;
     max-width: 230px;
     }
@@ -534,6 +605,23 @@ h2{
         float: right;
         margin: 16px;
     }
+    .searchproduct{
+    width: 61px;
+    height: 61px;
+    top: 5.5vh;
+    border-radius: 50px;
+    }
+    .searchproduct:hover{
+        width: 50vw;
+        top: 5.3vh;
+    }
+    .fa-search{
+        font-size: 1.6em;
+        top: 4px;
+        right: 2px;
+        width: 49.5px;
+        height: 46.5px;
+    }
     .crearproducto{
         text-align: center;
     padding: 10px 15px;
@@ -544,9 +632,9 @@ h2{
     border: 2px solid rgb(124, 124, 124);
     margin: 16px;
     }
+    
     .logo{
         width: 44vw;
-        right: -12.5vw;
         top: 0px;
         max-width: 250px;
     }
@@ -568,25 +656,25 @@ h2{
     }
     .categoriaheader600px ul li{
         padding: 10px;
-    }
-    .categoriaheader600px{
-        position: absolute;
-        display: inline-block;
-        font-family: 'Staatliches', cursive;
-        font-size: 28px;
-        width: 100%;
-        list-style-type: none;
-        overflow: hidden;
-        z-index: 20;
-    }
-    .logosder{
-        font-size: 32px;
-        top: 10px;
-    }
-    .producto{
-        width: 45vw;
-        height: 75vw;
-        margin: 9px;
+}
+.categoriaheader600px{
+    position: absolute;
+    display: inline-block;
+    font-family: 'Staatliches', cursive;
+    font-size: 28px;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    z-index: 20;
+}
+.logosder{
+    font-size: 32px;
+    top: 10px;
+}
+.producto{
+    width: 45vw;
+    height: 75vw;
+    margin: 9px;
 }
 .producto img {
     width: 99%;
@@ -602,7 +690,8 @@ h2{
 .precioproducto{
     font-size: 6vw;
 }
-.fa-bars{display: none;
+.fa-bars{
+    visibility:hidden;
 
 }
 .logovertical{
@@ -676,9 +765,14 @@ h2{
 @media (min-width:768px){
 .logo{
     width: 50vw;
-    right: -14vw;
     top: 2px;
     max-width: 274px;
+    }
+    .searchproduct:hover{
+        width: 60vw;
+    }
+    .fa-search{
+        font-size: 3vw;
     }
 header{
     height: 31vh;
@@ -769,8 +863,13 @@ header{
 @media (min-width:1024px){
     .logo{
         width: 50vw;
-        right: -16vw;
         top: 2px;
+    }
+    .searchproduct:hover{
+        width: 60vw;
+    }
+    .fa-search{
+        font-size: 4vh;
     }
     #imgslider2{
         display: none;

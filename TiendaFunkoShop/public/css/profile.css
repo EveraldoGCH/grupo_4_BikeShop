@@ -86,7 +86,6 @@ header{
     position: relative;
     align-items: center;
     width: 50vw;
-    right: -7vw;
     top: 2px;
 }
 .logovertical{
@@ -236,6 +235,7 @@ h2{
 /*FOOTER*/
 .inner-footer{
     display: flex;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     margin: 0;
@@ -404,6 +404,11 @@ padding: 1px;
       text-decoration: none;
       color: black;
   }
+  .text-danger {
+    color: red;
+    margin: 10px;
+    font-size: 13px;
+}
 .addcart{
     text-align: center;
     padding: 10px 15px;
@@ -552,7 +557,6 @@ padding: 1px;
     }
     .logo{
     width: 44vw;
-    right: -57px;
     top: -0.3%;
     max-width: 230px;
     }
@@ -580,7 +584,7 @@ padding: 1px;
     }
     .logo{
         width: 44vw;
-        right: -12.5vw;
+        right: -1.5vh;
         top: 0px;
         max-width: 250px;
     }
@@ -697,7 +701,7 @@ padding: 1px;
 @media (min-width:768px){
     .logo{
         width: 50vw;
-        right: -14vw;
+        right: -2vh;
         top: 2px;
         max-width: 274px;
     }
@@ -774,7 +778,7 @@ padding: 1px;
 @media (min-width:1024px){
     .logo{
         width: 50vw;
-        right: -16vw;
+        right: -3vh;
         top: 2px;
     }
     #imgslider2{

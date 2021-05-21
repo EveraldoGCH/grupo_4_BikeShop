@@ -19,7 +19,7 @@
             <label for="">Correo electronico:</label>
             <input type="text" placeholder="micorreo@email.com" name="email" tabindex="1" id="email"
             class="<%= locals.errores && errores.email ? 'is-invalid' : null %>"
-            value="<%= locals.old && old.email ? old.email : '' %>">
+            value="<%= locals.old && old.email ? old.email : '' %>" >
             <div>
                 <small class="text-danger erEmail"></small>
             </div>
@@ -44,9 +44,13 @@
                     </div>
                 <% } %>
             <!--RECORDAR SESION-->
-            <label for=""><input type="checkbox" name="recordar">Recordar sesión</label>0
+            <div class="recordarflex">
+            <label for="" class="recordar">
+                <input type="checkbox" name="recordar">Recordar sesión
+            </label>
+        </div>
             <!--BOTON-->
-            <input type="submit" value="Ingresar" tabindex="3">
+            <input class="recordarcheck" type="submit" value="Ingresar" tabindex="3">
             <!--AYUDAS LINKEADAS-->
             <a href="#">¿Olvidaste tu contraseña?</a><br>
             <a href="./register">¿No tienes cuenta? REGÍSTRATE</a>

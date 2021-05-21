@@ -2,15 +2,13 @@
 <html>
     <%- include('.././partials/headIndexBarraLat')%>
     <body>
-        <%- include('.././partials/headerConBarraLat')%>
-
-        <form class="searchproduct" action="./search" method="GET">
-            <input class="inputsearchproduct" type="search" name="busqueda">
-  <i class="fa fa-search"></i>
-        </form>
+        
 <section class="banner">
 
 </section>
+<h1>
+    HOLAAAAAAAAAaaaaaaa
+</h1>
 <div class="productos">
     <% for (let i=0; i < productos.length; i++) { %>
         <a href="./productdetails/<%=productos[i].id_product%>"><article class="producto">
@@ -24,7 +22,7 @@
     <% } %>    
 </div>
 
-        <%- include('.././partials/footer')%>
+       
         <script src="/js/front.js">
         </script>
     </body>

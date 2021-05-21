@@ -10,23 +10,12 @@
         <link rel="icon" type="image/png" href="/images/LOGO2.png"/>
         <meta charset="utf-8" />
         <title>Funko Shop</title>
-        <script>
-            function openSlideMenu(){
-                document.getElementById('menu').style.width='80vw'
-                document.getElementById('content').style.marginLeft='0vw'
-            }
-        
-            function closeSlideMenu(){
-                document.getElementById('menu').style.width='0'
-                document.getElementById('content').style.marginLeft='0'
-            }
-        </script>
     </head> <!--TERMINA HEAD DE create-->
     <div id="content">
         <header><!--HEADER-->
           <div id="pruebaflex">
             <span class="slide"><!--slider-->
-                <a href="#" onclick="openSlideMenu()">
+                <a href="#">
              <i class="fas fa-bars"></i></a>
           </span>
     
@@ -40,7 +29,7 @@
        </div>
           
           <div id="menu" class="nav"><!--BARRA DE NAVEGACION MOBILE-->
-             <a href="#" class="close" onclick="closeSlideMenu()">
+             <a href="#" class="close">
              <i class="fas fa-times"></i></a>
              <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='/images/batmanfunko.jpg'>Héroes</a>
              <a href="#"><img class='imagenBarraAbierta' alt="MiniFunko" src='/images/dwightFunko.jpg'>Series</a>
@@ -52,13 +41,25 @@
          </div>
     <body>
         <h1>Crear un nuevo Producto:</h1><br>
-        <form type="file" action="/products/createProduct" method="POST" id="createProduct" enctype="multipart/form-data">
+        <form type="file" action="/products/createProduct" class="products" method="POST" id="createProduct" enctype="multipart/form-data">
             <label for="nombreNewProduct">Nombre del Producto:</label>
-            <input type="text" name="nombreNewProduct"><br>
+            <input type="text" name="nombreNewProduct" id="nameProduct"><br>
+            <!--MENSAJE DE ERROR-->
+            <div>
+                <small class="text-danger erNameP"></small>
+            </div>
             <label for="descripNewProduct">Descripción:</label>
-            <input type="text" name="descripNewProduct"><br>
+            <input type="text" name="descripNewProduct" id="descProduct"><br>
+            <!--MENSAJE DE ERROR-->
+            <div>
+                <small class="text-danger erDesc"></small>
+            </div>
             <label for="precioNewProduct">Precio:</label>
-            <input type="text" name="precioNewProduct"><br>
+            <input type="text" name="precioNewProduct" id="precioProduct"><br>
+            <!--MENSAJE DE ERROR-->
+            <div>
+                <small class="text-danger erPrecio"></small>
+            </div>
             <label for="categoryNewProduct">Categoría:</label>
             <select name="categoryNewProduct">
                 <option value="heroe">

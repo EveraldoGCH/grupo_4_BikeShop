@@ -2,6 +2,8 @@ const path = require('path');
 const db= require(".././database/models")
 const Products = require(".././database/models/products.js");
 const fs = require("fs");
+const Sequelize = require("sequelize")
+const Op=db.Sequelize.Op
 
 const controllerProductos={
     productDetails: function(req, res){
@@ -52,7 +54,7 @@ const controllerProductos={
             image_product: req.file.filename
         })
         .then(function(){
-         return res.redirect("./productdetails/:id")   
+         return res.redirect("./productlist")   
         })
     },
     lista: function(req, res){
@@ -74,6 +76,16 @@ category: function(req, res){
     .then(function(productos){
         return res.render('./products/category', {productos:productos});
     })
-}
+},
+buscar:function(req, res){
+    db.Products.findAll({
+        where:{name_product:{[Op.Like]: '%'+ req.query.busqueda + '%'}
+    }
+    }).then(function(productos){
+    return res.render('./products/search', {productos:productos});
+    })
+},
+
+
 }
 module.exports=controllerProductos

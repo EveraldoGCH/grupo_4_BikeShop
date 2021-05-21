@@ -12,16 +12,19 @@
     
     <div class="caja-login">
         <a href="/"><img class ='logo' src="/images/LOGO2.png" alt='LOGO'></a>
-        <form action="/users/register" method="POST" enctype="multipart/form-data">
+        <form action="/users/register" method="POST" enctype="multipart/form-data" class="form">
             <!-- FOTO DE PERFIL -->
             <label for="profilepic">Imagen de Perfil</label>
             <input type="file" name="profileimg" accept="image/x-png,image/jpeg" class="botonsubir"/>
             <!-- NOMBRE COMPLETO -->
             <label for="">Nombre completo:</label>
-            <input type="text" placeholder="Peter Parker" name="name" tabindex="1"
+            <input type="text" placeholder="Peter Parker" name="name" tabindex="1" id="name"
             class="<%= locals.errores && errores.name ? 'is-invalid' : null %>"
             value="<%= locals.old && old.name ? old.name : '' %>">
                 <!-- Mensaje de error para nombre -->
+                <div>
+                    <small class="text-danger erName"></small>
+                </div>
                 <% if(locals.errores && errores.name) { %>
                     <div class="text-danger">
                         <%= errores.name.msg %>
@@ -29,9 +32,12 @@
                 <% } %>
             <!-- CORREO ELECTRONICO -->
             <label for="">Correo electronico:</label>
-            <input type="text" placeholder="micorreo@email.com" name="email" tabindex="2"
+            <input type="text" placeholder="micorreo@email.com" name="email" tabindex="2" id="email"
             class="<%= locals.errores && errores.email ? 'is-invalid' : null %>"
             value="<%= locals.old && old.email ? old.email : '' %>">
+            <div>
+                <small class="text-danger erEmail"></small>
+            </div>
                 <!-- Mensaje de error para correo -->
                 <% if(locals.errores && errores.email) { %>
                     <div class="text-danger">
@@ -40,8 +46,11 @@
                 <% } %>
             <!--CONTRASEÑA-->
             <label for="">Contraseña:</label>
-                <input type="password" placeholder="Escribe tu contraseña" name="password" tabindex="3"
+                <input type="password" placeholder="Escribe tu contraseña" name="password" tabindex="3" id="password"
                 class="<%= locals.errores && errores.password ? 'is-invalid' : null %>">
+                <div>
+                    <small class="text-danger erPassword"></small>
+                </div>
                 <!-- Mensaje de error para contraseña -->
                 <% if(locals.errores && errores.password) { %>
                     <div class="text-danger">
