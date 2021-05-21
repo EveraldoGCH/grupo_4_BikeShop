@@ -3,7 +3,7 @@ const db= require(".././database/models")
 const Products = require(".././database/models/products.js");
 const fs = require("fs");
 const Sequelize = require("sequelize")
-const Op=db.Sequelize.Op
+const  Op  = db.Sequelize.Op
 
 const controllerProductos={
     productDetails: function(req, res){
@@ -28,20 +28,21 @@ const controllerProductos={
     },
 
     editProductPost: function(req,res){
-        let producto=db.Products.findByPk(req.params.id)
             db.Products.update({
-            name_product: req.body.nombreNewProduct,
-            product_description:req.body.descripNewProduct,
-            price: req.body.precioNewProduct,
-            category:req.body.categoryNewProduct,
-            image_product: producto.image_product
+            name_product: req.body.nameProductEdit,
+            product_description: req.body.descripEditProduct,
+            price: req.body.precioEditProduct,
+            category:req.body.categoryNewProduct
         },
         {
             where:{
-                id:req.params.id
+                id_product:req.params.id
             }
         })
-        res.redirect("/products/productdetails/"+req.params.id)
+        .then(function(){
+        res.redirect("/products/productdetails/"+req.params.id)    
+        })
+        
     
     },
 
@@ -82,6 +83,7 @@ buscar:function(req, res){
         where:{name_product:{[Op.Like]: '%'+ req.query.busqueda + '%'}
     }
     }).then(function(productos){
+        console.log(req.query.busqueda)
     return res.render('./products/search', {productos:productos});
     })
 },

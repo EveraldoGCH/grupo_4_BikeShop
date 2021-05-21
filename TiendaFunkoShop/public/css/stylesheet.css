@@ -361,6 +361,28 @@ h2{
     justify-content: space-between;
     align-items: baseline;
 }
+/*HOVERS*/
+
+.producto img:hover{
+    transform: scale(1.10);
+    box-shadow:6px ​6px 14px 2px blac black;
+    transition: 0.3s ease;
+}
+.producto .descripcionproducto:hover{
+    transform: scale(1.07);
+    box-shadow:6px ​6px 14px 2px blac black;
+    transition: 0.2s ease-out;
+}
+.logo:hover{
+    transform: scale(1.15);
+    box-shadow:6px ​6px 14px 2px blac black;
+    transition: 0.3s ease;
+}
+#social-items:hover{
+    transform: scale(1.40);
+    box-shadow:6px ​6px 14px 2px blac black;
+    transition: 0.5s ease-out;
+}
 .producto img{
     width: 90%;
     height: 70%;

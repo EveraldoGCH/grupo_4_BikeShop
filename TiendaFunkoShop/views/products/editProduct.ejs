@@ -3,7 +3,7 @@
     <%- include('.././partials/headIndexBarraLat')%>
     <body>
         <h1>Editar un Producto:</h1><br>
-        <form action="./<%=productoedit.id_product%>" method="POST" id="createProduct" enctype="multipart/form-data">
+        <form action="./<%=productoedit.id_product%>" method="POST" id="createProduct">
             <label for="nameProductEdit">Nombre del Producto:</label>
             <input type="text" name="nameProductEdit" id="nameProduct" value="<%=productoedit.name_product%>"><br>
             <!--MENSAJE DE ERROR-->
