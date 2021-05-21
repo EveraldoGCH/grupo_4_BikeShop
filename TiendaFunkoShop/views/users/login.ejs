@@ -14,12 +14,15 @@
     <div class="caja-login">
         <a href="/"><img class ='logo' src="/images/LOGO2.png" alt='LOGO'></a>
         <h1>Iniciar sesión</h1>
-        <form action="/users/login" method="POST">
+        <form class="form" action="/users/login" method="POST">
             <!-- CORREO ELECTRONICO -->
             <label for="">Correo electronico:</label>
-            <input type="text" placeholder="micorreo@email.com" name="email" tabindex="1"
+            <input type="text" placeholder="micorreo@email.com" name="email" tabindex="1" id="email"
             class="<%= locals.errores && errores.email ? 'is-invalid' : null %>"
             value="<%= locals.old && old.email ? old.email : '' %>">
+            <div>
+                <small class="text-danger erEmail"></small>
+            </div>
                 <!-- Mensaje de error para correo -->
                 <% if(locals.errores && errores.email) { %>
                     <div class="text-danger">
@@ -28,9 +31,13 @@
                 <% } %>
             <!--CONTRASEÑA-->
             <label for="">Contraseña:</label>
-                <input type="password" placeholder="Contraseña" name="password" tabindex="2"
+                <input type="password" placeholder="Contraseña" name="password" tabindex="2" id="password"
                 class="<%= locals.errores && errores.password ? 'is-invalid' : null %>">
                 <!-- Mensaje de error para contraseña -->
+                <div>
+                    <small class="text-danger erPassword"></small>
+                </div>
+                
                 <% if(locals.errores && errores.password) { %>
                     <div class="text-danger">
                         <%= errores.password.msg %>
@@ -47,6 +54,7 @@
         </form>
     </div>
             
-
+    <script src="/js/front.js">
+    </script>
 </body>
 </html>
