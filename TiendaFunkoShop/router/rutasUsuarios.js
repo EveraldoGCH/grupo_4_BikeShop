@@ -16,6 +16,7 @@ router.get('/profile',authMiddleware, userController.profile)
 router.get('/logout', userController.logout);
 
 // Metodo POST
+router.post('/profile',authMiddleware, userController.profileEdit)
 router.post('/login', validarLoginForm, userController.loginProcess);
 router.post('/register',upload_file.single("profileimg"), validarRegisterForm, userController.create);
 

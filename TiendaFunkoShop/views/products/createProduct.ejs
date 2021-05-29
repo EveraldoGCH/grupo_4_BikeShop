@@ -19,7 +19,7 @@
              <i class="fas fa-bars"></i></a>
           </span>
     
-          <a href="/"><img class="logo" src="/images/LOGO2.png" alt='LOGO'></a><!--LOGO-->
+          <a href="/"><img class="logo" src="/images/LOGO2.png" alt='LOGO' id="logocreate"></a><!--LOGO-->
           <a href="/"><img class="logovertical" src="/images/logo-funkoShop.png" alt='LOGO'></a><!--LOGO(ACTUALMENTE SIN USO)-->
          
           <span class="logosder"><!--Carrito y user logos-->
@@ -41,6 +41,7 @@
          </div>
     <body>
         <h1>Crear un nuevo Producto:</h1><br>
+        <div class="flexcreate">
         <form type="file" action="/products/createProduct" class="products" method="POST" id="createProduct" enctype="multipart/form-data">
             <label for="nombreNewProduct">Nombre del Producto:</label>
             <input type="text" name="nombreNewProduct" id="nameProduct"><br>
@@ -58,20 +59,20 @@
             <input type="text" name="precioNewProduct" id="precioProduct"><br>
             <!--MENSAJE DE ERROR-->
             <div>
-                <small class="text-danger erPrecio"></small>
+                
             </div>
             <label for="categoryNewProduct">Categoría:</label>
             <select name="categoryNewProduct">
-                <option value="heroe">
+                <option value="heroes">
                     Heores
                 </option>
-                <option value="movie">
+                <option value="peliculas">
                     Peiculas
                 </option>
-                <option value="serie">
+                <option value="series">
                     Series
                 </option>
-                <option value="original">
+                <option value="originales">
                     Originales
                 </option>
             </select><br>
@@ -79,7 +80,7 @@
             <input type="file" name="imagenNewProduct" accept="image/*"><br>
             <button type="submit" class="addcart" formmethod="POST">Crear Producto</button>
           </form>
-          <script src="/js/front.js">
+        </div>
           </script>
     </body>
 </html>

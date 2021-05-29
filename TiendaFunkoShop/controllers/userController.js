@@ -142,7 +142,24 @@ logout: function(req,res) {
     res.clearCookie("rememberUser");
     req.session.destroy();
     return res.redirect("/");
+},
+profileEdit:function(req,res){
+    db.Users.update({
+    user_name: req.body.nuevoNombreEdit,
+    user_password:bcrypt.hashSync(req.body.nuevaContraseñaEdit, 10)
+},
+{
+    where:{
+        profile_img:req.session.profile_img
+    }
+})
+.then(function(){
+res.redirect("/products/productdetails/"+req.params.id)    
+})
+
+
 }
+
 }
 
 module.exports = userController

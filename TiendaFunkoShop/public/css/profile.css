@@ -235,7 +235,6 @@ h2{
 /*FOOTER*/
 .inner-footer{
     display: flex;
-    width: 100%;
     justify-content: space-around;
     align-items: center;
     margin: 0;
@@ -317,10 +316,19 @@ padding: 0 12px;
     justify-content: center;
 
 }
+.flexcreate{
+    display: flex;
+    justify-content: center;
+}
+#logocreate{
+    position: relative;
+    left: 11vw;
+}
 /*PERFIL*/
 .padreperfil{
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     margin: 10px;
 }
@@ -329,7 +337,17 @@ padding: 0 12px;
 }
 .fotoperfil{
     max-width: 200px;
-    width: 90%;
+    width: 100%;
+}
+
+#listadoFunkosimg {
+    position: relative;
+    top: 20px;
+    padding-top: 15px;
+}
+#nuevosingresos {
+    position: relative;
+    top: 5px;
 }
 .fotoperfil img{
     border-radius: 20%;
@@ -555,6 +573,23 @@ padding: 1px;
     header{
         height:16vh;
     }
+    .searchproduct:hover{
+        width: 76vw;
+    }
+    .fa-search{
+        box-sizing: border-box;
+    padding: 10px;
+    width: 49.5px;
+    height: 46.5px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.6em;
+    transition: all 0.3s;
+    }
     .logo{
     width: 44vw;
     top: -0.3%;
@@ -568,12 +603,7 @@ padding: 1px;
         display: block;
         visibility: visible;
     }
-    .producto{
-        width: 31vw;
-        height: 29vh;
-        max-width: 165px;
-        max-height: 165px;
-    }
+    
     .inner-footer{
         height: 10vh;
     }
@@ -582,11 +612,54 @@ padding: 1px;
     header{
         height: 29vh;
     }
+    .editarproducto{
+        text-align: center;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Staatliches', cursive;
+        border-radius: 6px;
+        border: 2px solid rgb(124, 124, 124);
+        float: right;
+        margin: 16px;
+    }
+    .searchproduct{
+    width: 61px;
+    height: 61px;
+    top: 5.5vh;
+    border-radius: 50px;
+    }
+    .searchproduct:hover{
+        width: 50vw;
+        top: 5.3vh;
+    }
+    .fa-search{
+        font-size: 1.6em;
+        top: 4px;
+        right: 2px;
+        width: 49.5px;
+        height: 46.5px;
+    }
+    .crearproducto{
+        text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    border-radius: 6px;
+    border: 2px solid rgb(124, 124, 124);
+    margin: 16px;
+    }
+    
     .logo{
         width: 44vw;
-        right: -1.5vh;
         top: 0px;
         max-width: 250px;
+    }
+    .logo:hover{
+        transform: scale(1.15);
+        box-shadow:6px ​6px 14px 2px blac black;
+        transition: 0.3s ease;
     }
     .categoriaheader600px a{
         text-decoration: none;
@@ -606,28 +679,42 @@ padding: 1px;
     }
     .categoriaheader600px ul li{
         padding: 10px;
-    }
-    .categoriaheader600px{
-        position: absolute;
-        display: inline-block;
-        font-family: 'Staatliches', cursive;
-        font-size: 28px;
-        width: 100%;
-        list-style-type: none;
-        overflow: hidden;
-        z-index: 20;
-    }
-    .logosder{
-        font-size: 32px;
-        top: 10px;
-    }
-    .producto{
-        width: 23vw;
-        height: 30vh;
-        max-width: 200px;
-        max-height: 200px;
 }
-.fa-bars{display: none;
+.categoriaheader600px{
+    position: absolute;
+    display: inline-block;
+    font-family: 'Staatliches', cursive;
+    font-size: 28px;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    z-index: 20;
+}
+.logosder{
+    font-size: 32px;
+    top: 10px;
+}
+.producto{
+    width: 45vw;
+    height: 75vw;
+    margin: 9px;
+}
+.producto img {
+    width: 99%;
+    height: 56%
+}
+.nombreproducto{
+    font-size: 6vw;
+    
+}
+.descripcionproducto{
+    font-size: 2.7vw;
+}
+.precioproducto{
+    font-size: 6vw;
+}
+.fa-bars{
+    visibility:hidden;
 
 }
 .logovertical{
@@ -699,18 +786,42 @@ padding: 1px;
 }
 }
 @media (min-width:768px){
-    .logo{
-        width: 50vw;
-        right: -2vh;
-        top: 2px;
-        max-width: 274px;
+.logo{
+    width: 50vw;
+    top: 2px;
+    max-width: 274px;
     }
-    header{
-        height: 31vh;
+    .searchproduct:hover{
+        width: 60vw;
     }
-    .imagenesheader{
-        top: 9%;
+    .fa-search{
+        font-size: 3vw;
     }
+header{
+    height: 31vh;
+    }
+.imagenesheader{
+    top: 9%;
+    }
+.producto{
+    width: 30vw;
+    height: 63vw;
+    margin: 10px;
+}
+.producto img {
+    width: 96%;
+    height: 49%;
+}
+.nombreproducto{
+    font-size: 5vw;
+    
+}
+.descripcionproducto{
+    font-size: 2.2vw;
+}
+.precioproducto{
+    font-size: 4.5vw;
+}
     .cart{
         justify-content: center;
         align-items: center;
@@ -765,9 +876,6 @@ padding: 1px;
         justify-content: space-around;
     
     }
-    .nombreproducto{
-        font-size:34px;
-    }
     .inner-footer{
         height: 12vh;
     }
@@ -778,8 +886,13 @@ padding: 1px;
 @media (min-width:1024px){
     .logo{
         width: 50vw;
-        right: -3vh;
         top: 2px;
+    }
+    .searchproduct:hover{
+        width: 60vw;
+    }
+    .fa-search{
+        font-size: 4vh;
     }
     #imgslider2{
         display: none;

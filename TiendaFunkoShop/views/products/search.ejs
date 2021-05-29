@@ -6,9 +6,7 @@
 <section class="banner">
 
 </section>
-<h1>
-    HOLAAAAAAAAAaaaaaaa
-</h1>
+<%- include('.././partials/headerConBarraLat')%>
 <div class="productos">
     <% for (let i=0; i < productos.length; i++) { %>
         <a href="./productdetails/<%=productos[i].id_product%>"><article class="producto">
@@ -21,7 +19,7 @@
         </article></a>
     <% } %>    
 </div>
-
+<%- include('.././partials/footer')%>
        
         <script src="/js/front.js">
         </script>

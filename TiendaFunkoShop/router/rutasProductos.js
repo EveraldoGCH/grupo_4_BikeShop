@@ -16,6 +16,7 @@ router.get('/editProduct/:id',auhtMiddleware, adminMiddleware, controllerProduct
 router.get('/productlist', controllerProductos.lista)
 router.get('/vistaNoAdmin', controllerProductos.noAdmin)
 router.get('/search', controllerProductos.buscar)
+router.get('/new', controllerProductos.ingresos)
 router.get('/:categoria', controllerProductos.category)
 
 // Metodo POST

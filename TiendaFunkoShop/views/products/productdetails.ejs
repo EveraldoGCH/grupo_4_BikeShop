@@ -19,7 +19,7 @@
             precio: <%=producto.price%>
         </h5>
         <form action="../products/cart.ejs" method="GET" id="botonagregar">
-            <button class="addcart" type="submit" name="addcart">+ Agregar al carrito</button>
+        
         </form>
     </div>
 </section>
@@ -29,6 +29,7 @@
 <br>
 <br>
 </div>
+<%- include('../partials/productosBuscados')%>
 <%- include('../partials/footer')%>
 <script src="/js/front.js">
 </script>
