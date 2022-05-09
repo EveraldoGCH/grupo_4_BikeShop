@@ -97,6 +97,7 @@ const userController = {
 
     // POST de register
     create: function (req,res){
+        console.log("hola")
     let errores = validationResult(req);
     // si hay errores, mostrarlos en texto
     if(!errores.isEmpty()){
@@ -125,7 +126,7 @@ const userController = {
     // Crear usuario en la data
     db.Users.create({
         user_name: req.body.name,
-        user_email:req.body.email,
+        user_email: req.body.email,
         // encriptar password
         password: bcrypt.hashSync(req.body.password, 10),
         profile_img: req.file.filename,

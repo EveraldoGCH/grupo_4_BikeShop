@@ -1,6 +1,6 @@
 const path = require("path");
 const db= require(".././database/models")
-const Porducts = require(".././database/models/products");
+const Products = require(".././database/models/products");
 
 const mainController={
     index: function(req, res) {
